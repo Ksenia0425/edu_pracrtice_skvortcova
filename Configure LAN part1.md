@@ -284,10 +284,12 @@
 # Часть 7
 ## Шаг 1
 Создаем loopback-интерфейс 1 на маршрутизаторе R3 с IP-адресом 192.168.101.1/24.
+
 <img width="578" height="130" alt="Снимок экрана 2026-04-20 163730" src="https://github.com/user-attachments/assets/7cdedd52-2dcf-4008-8e2c-bd5896cf6083" />
 
 ## Шаг 2
 Создаем loopback-интерфейс 3 на маршрутизаторе R2 с IP-адресом 192.168.103.3/24.
+
 <img width="573" height="118" alt="Снимок экрана 2026-04-20 163830" src="https://github.com/user-attachments/assets/08722506-3983-4319-96fb-caab34eae087" />
 
 ## Шаг 3
@@ -325,4 +327,6 @@ IP-адреса при использовании туннелей должны 
 
 ## Шаг 6
 С помощью расширенного ping проверяем, что loopback-интерфейс R3 может пинговать loopback-интерфейс R2.
+
 <img width="531" height="297" alt="Снимок экрана 2026-04-20 165309" src="https://github.com/user-attachments/assets/76ddce1d-4ce3-48f5-a0f8-61ea2973e01a" />
+*Успешный пинг*
