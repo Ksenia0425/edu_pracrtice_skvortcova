@@ -144,30 +144,53 @@
 <img width="425" height="218" alt="Снимок экрана 2026-04-16 180719" src="https://github.com/user-attachments/assets/71cba6b6-2b7d-4358-ba72-e954907b98ee" />
 *Успешный пинг*
 
+## Шаг 4
+3.0.0.101 пингуем с РС3.
+
+<img width="425" height="218" alt="Снимок экрана 2026-04-16 180719" src="https://github.com/user-attachments/assets/71cba6b6-2b7d-4358-ba72-e954907b98ee" />
+*Успешный пинг*
+
 # Часть 3
 ## Шаг 1
 Настраиваем имя хоста многоуровневого коммутатора (Multilayer Switch) на MLS.
 <img width="266" height="30" alt="Снимок экрана 2026-04-21 161232" src="https://github.com/user-attachments/assets/5c348726-ff68-46af-a0b2-29303de2cac4" />
 
+## Шаг 2
 Включаем возможности маршрутизации на MLS.
 <img width="233" height="17" alt="Снимок экрана 2026-04-16 181129" src="https://github.com/user-attachments/assets/8ebbacfb-e2c5-49f7-9912-2bbed4373c46" />
 
-Создайте VLAN 100 с именем Sales_dept и VLAN 200 с именем IT_dept.
+Создаём VLAN 100 с именем Sales_dept и VLAN 200 с именем IT_dept.
+<img width="299" height="84" alt="Снимок экрана 2026-04-16 181134" src="https://github.com/user-attachments/assets/8147ad1d-823d-4bb1-b94d-c66cd3defd65" />
 
-Шаг 4: Назначьте интерфейс f0/4 VLAN 100, а интерфейс f0/5 VLAN 200.
 
-Шаг 5. Включите маршрутизацию между VLAN 100 и VLAN 200, используя SVI (Switch
-Virtual Interface) на MLS, со следующими требованиями:
+Шаг 4: 
+Назнаем интерфейс f0/4 VLAN 100, а интерфейс f0/5 VLAN 200.
+<img width="385" height="167" alt="Снимок экрана 2026-04-16 181748" src="https://github.com/user-attachments/assets/33582170-9108-4e42-bac8-256c8bf8349d" />
 
-· IP-адрес VLAN 100: 100.0.0.50/8
-· IP-адрес VLAN 200: 200.0.0.50/24
 
-Шаг 6. Измените интерфейсы f0/1, f0/2 и f0/3 на интерфейсы 3-го уровня со
-следующими требованиями:
+Шаг 5. 
+Включаем маршрутизацию между VLAN 100 и VLAN 200, используя SVI (Switch Virtual Interface) на MLS, с требованиями по заданию (VLAN 100 - 100.0.0.50/8, VLAN 200 - 200.0.0.50/24
+<img width="589" height="296" alt="Снимок экрана 2026-04-20 143559" src="https://github.com/user-attachments/assets/4e2e284b-bf1a-4b52-8aa8-be5eca49d576" />
 
-· IP-адрес f0/1: 11.0.0.50/8
-· IP-адрес f0/2: 12.0.0.50/8
-· IP-адрес f0/3: 40.40.40.50/24
 
-Шаг 7. Пропингуйте 200.0.0.100 с РС6
+Шаг 6. 
+Изменяем интерфейсы f0/1(11.0.0.50/8), f0/2(12.0.0.50/8) и f0/3(40.40.40.50/24) на интерфейсы 3-го уровня со следующими требованиями.
+
+<img width="416" height="98" alt="Снимок экрана 2026-04-20 143709" src="https://github.com/user-attachments/assets/04c88b7d-05a2-49cc-a9e5-aedf9be92762" />
+
+*Интерфейс f0/1*
+
+<img width="446" height="73" alt="Снимок экрана 2026-04-20 143826" src="https://github.com/user-attachments/assets/7cb66a97-1f05-4a8c-96e6-efe69c933c54" />
+
+
+*Интерфейс f0/2*
+
+<img width="618" height="142" alt="Снимок экрана 2026-04-20 143939" src="https://github.com/user-attachments/assets/087aa106-d245-469f-8e26-65e99c2e4d1c" />
+
+*Интерфейс f0/3*
+
+Шаг 7. 
+Пропингуем 200.0.0.100 с РС1
+
+<img width="448" height="230" alt="Снимок экрана 2026-04-20 144903" src="https://github.com/user-attachments/assets/551b21ea-a36d-49ef-b133-2fda2e8e1394" />
 
