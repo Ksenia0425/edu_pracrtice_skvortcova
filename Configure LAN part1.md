@@ -1,4 +1,4 @@
-# Часть 1
+<img width="339" height="124" alt="image" src="https://github.com/user-attachments/assets/39c13bf5-b045-415c-b92c-19c932d6eede" /># Часть 1
 ## Шаг 1
 Согласно схеме (Москва и Новосибирск), в среде моделирования Packet Tracer создали сеть, включающая маршрутизаторы R1, R2, R3, многоуровневый коммутатор MLS и оконечные устройства.
 
@@ -286,18 +286,43 @@
 Создаем loopback-интерфейс 1 на маршрутизаторе R3 с IP-адресом 192.168.101.1/24.
 <img width="578" height="130" alt="Снимок экрана 2026-04-20 163730" src="https://github.com/user-attachments/assets/7cdedd52-2dcf-4008-8e2c-bd5896cf6083" />
 
-Шаг 2
+## Шаг 2
 Создаем loopback-интерфейс 3 на маршрутизаторе R2 с IP-адресом 192.168.103.3/24.
 <img width="573" height="118" alt="Снимок экрана 2026-04-20 163830" src="https://github.com/user-attachments/assets/08722506-3983-4319-96fb-caab34eae087" />
 
-Шаг 3
+## Шаг 3
 Проверяем, что R3 и R2 объявляют эти loopback-интерфейсы друг другу, используя RIPv2.
 
-Шаг 4
+<img width="339" height="124" alt="image" src="https://github.com/user-attachments/assets/50087ac3-04d7-4783-9505-7f583fe323cd" />
+
+*На R3*
+
+<img width="336" height="114" alt="image" src="https://github.com/user-attachments/assets/ce80db7d-4192-4db5-9436-e0bf8cc64a52" />
+
+*На R2*
+
+## Шаг 4
 RIPv2 должен работать ТОЛЬКО на R3 и R2.
 
-Шаг 5
+<img width="232" height="57" alt="image" src="https://github.com/user-attachments/assets/e5ab12f5-7c02-4d7c-bd72-61d63f8d6722" />
+
+*Пусто на MLS*
+
+<img width="409" height="95" alt="image" src="https://github.com/user-attachments/assets/d9ddf8d0-a02f-4932-ba45-51af6d308797" />
+
+*Всё есть на R3*
+
+## Шаг 5
 IP-адреса при использовании туннелей должны быть 200.200.200.#/24, где # - это ID маршрутизатора.
 
-Шаг 6
+<img width="548" height="194" alt="image" src="https://github.com/user-attachments/assets/1dc81555-b4e9-4b09-b0a2-ece450f82d0a" />
+
+*На R3*
+
+<img width="545" height="208" alt="image" src="https://github.com/user-attachments/assets/176e62bf-2774-47b2-9735-31819f2ada4e" />
+
+*На R2*
+
+## Шаг 6
 С помощью расширенного ping проверяем, что loopback-интерфейс R3 может пинговать loopback-интерфейс R2.
+<img width="531" height="297" alt="Снимок экрана 2026-04-20 165309" src="https://github.com/user-attachments/assets/76ddce1d-4ce3-48f5-a0f8-61ea2973e01a" />
