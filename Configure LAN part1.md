@@ -157,23 +157,28 @@
 
 ## Шаг 2
 Включаем возможности маршрутизации на MLS.
+
 <img width="233" height="17" alt="Снимок экрана 2026-04-16 181129" src="https://github.com/user-attachments/assets/8ebbacfb-e2c5-49f7-9912-2bbed4373c46" />
 
+## Шаг 3
 Создаём VLAN 100 с именем Sales_dept и VLAN 200 с именем IT_dept.
+
 <img width="299" height="84" alt="Снимок экрана 2026-04-16 181134" src="https://github.com/user-attachments/assets/8147ad1d-823d-4bb1-b94d-c66cd3defd65" />
 
 
-Шаг 4: 
+## Шаг 4
 Назнаем интерфейс f0/4 VLAN 100, а интерфейс f0/5 VLAN 200.
+
 <img width="385" height="167" alt="Снимок экрана 2026-04-16 181748" src="https://github.com/user-attachments/assets/33582170-9108-4e42-bac8-256c8bf8349d" />
 
 
-Шаг 5. 
-Включаем маршрутизацию между VLAN 100 и VLAN 200, используя SVI (Switch Virtual Interface) на MLS, с требованиями по заданию (VLAN 100 - 100.0.0.50/8, VLAN 200 - 200.0.0.50/24
+## Шаг 5
+Включаем маршрутизацию между VLAN 100 и VLAN 200, используя SVI (Switch Virtual Interface) на MLS, с требованиями по заданию (VLAN 100 - 100.0.0.50/8, VLAN 200 - 200.0.0.50/24.
+
 <img width="589" height="296" alt="Снимок экрана 2026-04-20 143559" src="https://github.com/user-attachments/assets/4e2e284b-bf1a-4b52-8aa8-be5eca49d576" />
 
 
-Шаг 6. 
+## Шаг 6
 Изменяем интерфейсы f0/1(11.0.0.50/8), f0/2(12.0.0.50/8) и f0/3(40.40.40.50/24) на интерфейсы 3-го уровня со следующими требованиями.
 
 <img width="416" height="98" alt="Снимок экрана 2026-04-20 143709" src="https://github.com/user-attachments/assets/04c88b7d-05a2-49cc-a9e5-aedf9be92762" />
@@ -189,8 +194,31 @@
 
 *Интерфейс f0/3*
 
-Шаг 7. 
-Пропингуем 200.0.0.100 с РС1
+## Шаг 7
+Пропингуем 200.0.0.100 с РС1.
 
 <img width="448" height="230" alt="Снимок экрана 2026-04-20 144903" src="https://github.com/user-attachments/assets/551b21ea-a36d-49ef-b133-2fda2e8e1394" />
+
+# Часть 4
+## Шаг 1
+Настройте IP-адреса f0/0 маршрутизатора R1 - 10.0.0.2/8, f0/1 - 11.0.0.2/8.
+
+<img width="623" height="309" alt="Снимок экрана 2026-04-20 145927" src="https://github.com/user-attachments/assets/342c1e44-d8a4-4e64-84c0-e69412f30de9" />
+
+Шаг 2
+Настроиваем IP-адрес f0/0 маршрутизатора R2 - 10.0.0.3/8, f0/1 - 12.0.0.3/8.
+
+<img width="625" height="286" alt="Снимок экрана 2026-04-20 150131" src="https://github.com/user-attachments/assets/d0028ad7-8847-4619-a815-3629619ae0a5" />
+
+Шаг 3
+Настраиваем протокол Cisco High availability на R1 и R2 в Москве с требованиями по заданию.
+
+<img width="506" height="233" alt="Снимок экрана 2026-04-20 150640" src="https://github.com/user-attachments/assets/3d1c5db0-57c4-4087-b019-0cfaadaa440a" />
+
+*Настройка на R1*
+
+<img width="512" height="257" alt="Снимок экрана 2026-04-20 151631" src="https://github.com/user-attachments/assets/de160d4e-4414-4365-a98c-ebe6f0ae6e5a" />
+
+*Настройка на R2*
+
 
