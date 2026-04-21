@@ -125,12 +125,21 @@
 <img width="629" height="505" alt="Снимок экрана 2026-04-16 171717" src="https://github.com/user-attachments/assets/fcf00cfa-a1e2-48c8-ab19-d688631ec3d4" />
 
 
-
 ## Шаг 3
 Настриваем R3 в качестве DHCP-сервера для любой машины, подключенной к VLAN 1, 2, 3, 4 на S2 и S3, используя требования задания.
 
+<img width="533" height="335" alt="Снимок экрана 2026-04-16 172942" src="https://github.com/user-attachments/assets/f4fddaa2-8f29-4b9b-814b-ba0db66ad792" />
+
+<img width="429" height="44" alt="Снимок экрана 2026-04-16 180731" src="https://github.com/user-attachments/assets/bea23fe0-472c-4fb6-83e8-ef2753e064d8" />
+
+*Делаем исключения*
+
+<img width="433" height="14" alt="Снимок экрана 2026-04-16 180735" src="https://github.com/user-attachments/assets/287f1388-0e58-42e1-9bc9-149f19bc11ab" />
+
+*Доделываем исключения*
 
 ## Шаг 4
 3.0.0.101 пингуем с РС3.
 
-
+<img width="425" height="218" alt="Снимок экрана 2026-04-16 180719" src="https://github.com/user-attachments/assets/71cba6b6-2b7d-4358-ba72-e954907b98ee" />
+*Успешный пинг*
