@@ -205,12 +205,12 @@
 
 <img width="623" height="309" alt="Снимок экрана 2026-04-20 145927" src="https://github.com/user-attachments/assets/342c1e44-d8a4-4e64-84c0-e69412f30de9" />
 
-Шаг 2
+## Шаг 2
 Настроиваем IP-адрес f0/0 маршрутизатора R2 - 10.0.0.3/8, f0/1 - 12.0.0.3/8.
 
 <img width="625" height="286" alt="Снимок экрана 2026-04-20 150131" src="https://github.com/user-attachments/assets/d0028ad7-8847-4619-a815-3629619ae0a5" />
 
-Шаг 3
+## Шаг 3
 Настраиваем протокол Cisco High availability на R1 и R2 в Москве с требованиями по заданию.
 
 <img width="506" height="233" alt="Снимок экрана 2026-04-20 150640" src="https://github.com/user-attachments/assets/3d1c5db0-57c4-4087-b019-0cfaadaa440a" />
@@ -221,4 +221,40 @@
 
 *Настройка на R2*
 
+# Часть 4
+## Шаг 1
+Настроиваем EIGRP с номером автономной системы (AS) 100 на R1, R2, R3 и MLS.
 
+<img width="317" height="86" alt="Снимок экрана 2026-04-20 153408" src="https://github.com/user-attachments/assets/9a7eab1e-33d4-4d2f-9f44-5f583170602c" />
+*R1*
+
+<img width="386" height="158" alt="Снимок экрана 2026-04-20 153542" src="https://github.com/user-attachments/assets/80203399-4b0f-419b-979d-25f7524e534d" />
+
+*R2*
+
+<img width="321" height="139" alt="Снимок экрана 2026-04-20 153314" src="https://github.com/user-attachments/assets/83468930-b266-4758-b741-0e3d5f3a260d" />
+
+*R3*
+
+<img width="622" height="312" alt="Снимок экрана 2026-04-20 153710" src="https://github.com/user-attachments/assets/9d6dd7ea-f889-4efc-8a00-c07da7072b02" />
+
+*MLS*
+
+Шаг 2
+Проверяем, обеспечив возможность подключения по SSH с сервера(10.0.0.100), подключенного к подсети 10.0.0.0/8 (R1 и R2), к S1 и SW3.
+
+<img width="535" height="118" alt="Снимок экрана 2026-04-20 161153" src="https://github.com/user-attachments/assets/1acda4d1-671a-486f-a185-ee8ad5ed7415" />
+
+*Проверка на MLS*
+
+<img width="510" height="565" alt="Снимок экрана 2026-04-20 161033" src="https://github.com/user-attachments/assets/6b7aa04d-6aaa-465a-b2db-ba91fdead178" />
+
+*Успешное подключение по SSH*
+
+
+Шаг 3
+Пингуем с сервера 2.0.0.50
+
+<img width="427" height="196" alt="Снимок экрана 2026-04-20 155939" src="https://github.com/user-attachments/assets/39796b23-d645-4597-b9c4-b1aba9859b36" />
+
+*Успешный пинг*
