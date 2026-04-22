@@ -508,7 +508,7 @@ IP-адреса при использовании туннелей должны 
 ---
 # Блок код
 ```
-## rus-msk-mls1
+rus-msk-mls1
 !
 version 12.2(37)SE1
 no service timestamps log datetime msec
@@ -640,7 +640,7 @@ end
 ```
 
 ```
-## rus-msk-r1
+rus-msk-r1
 !
 version 15.1
 no service timestamps log datetime msec
@@ -701,8 +701,6 @@ access-list 101 permit ip any any
 !
 banner motd "Raboty vipoklnila Skvortcova Ksenia Ivanovna student group 321, vi jyrnale pod nomerom 23!"
 !
-!
-!
 snmp-server community cisco RW
 !
 logging trap debugging
@@ -737,8 +735,6 @@ hostname rus-msk-r2
 aaa new-model
 !
 aaa authentication login default group tacacs+ local 
-!
-!
 !
 ip cef
 no ipv6 cef
@@ -830,7 +826,7 @@ end
 
 ```
 
-## rus-msk-s1
+rus-msk-s1
 !
 version 15.0
 no service timestamps log datetime msec
@@ -917,8 +913,7 @@ end
 
 ```
 ```
-
-## rus-nsk-r3
+rus-nsk-r3
 !
 version 15.1
 no service timestamps log datetime msec
@@ -1041,7 +1036,7 @@ end
 ```
 
 ```
-## rus-nsk-s2
+rus-nsk-s2
 !
 version 15.0
 no service timestamps log datetime msec
@@ -1164,7 +1159,7 @@ end
 
 ```
 ```
-## rus-nsk-s3
+rus-nsk-s3
 !
 version 15.0
 no service timestamps log datetime msec
@@ -1284,4 +1279,6 @@ line vty 5 15
  transport input ssh
 !
 end
+```
+`строка кода`
 
