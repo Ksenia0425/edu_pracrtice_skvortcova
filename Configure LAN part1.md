@@ -1,8 +1,9 @@
-<img width="339" height="124" alt="image" src="https://github.com/user-attachments/assets/39c13bf5-b045-415c-b92c-19c932d6eede" /># Часть 1
+# Часть 1
 ## Шаг 1
 Согласно схеме (Москва и Новосибирск), в среде моделирования Packet Tracer создали сеть, включающая маршрутизаторы R1, R2, R3, многоуровневый коммутатор MLS и оконечные устройства.
 
 <img width="1120" height="572" alt="Снимок экрана 2026-04-15 150452" src="https://github.com/user-attachments/assets/619f6419-7eb2-4cd8-8a7a-391f7731669b" />
+*Топология нашей сети*
 
 ## Шаг 2
 Для идентификации администратора на всех роутерах настроено приветственное сообщение.
@@ -330,3 +331,105 @@ IP-адреса при использовании туннелей должны 
 
 <img width="531" height="297" alt="Снимок экрана 2026-04-20 165309" src="https://github.com/user-attachments/assets/76ddce1d-4ce3-48f5-a0f8-61ea2973e01a" />
 *Успешный пинг*
+
+# Часть 8
+## Шаг 1
+Настраиваем R1, R2, R3 и MLS на использование сервера(10.0.0.100) в качестве защищенного NTP-сервера, используя ключ 1 "cisco", и в качестве Syslog-сервера.
+
+<img width="406" height="100" alt="Снимок экрана 2026-04-20 171026" src="https://github.com/user-attachments/assets/be46a446-2563-4c69-a423-8fd569459c6b" />
+
+*Настройка NTP-сервера на R1*
+
+<img width="412" height="98" alt="Снимок экрана 2026-04-20 171117" src="https://github.com/user-attachments/assets/9497ea0c-0509-47d4-a5f1-615c5ec2c4e0" />
+
+*Настройка NTP-сервера на R2*
+
+<img width="389" height="226" alt="Снимок экрана 2026-04-20 170905" src="https://github.com/user-attachments/assets/deb68a7e-cdd3-4c8d-b18e-27bc7a5acb9e" />
+
+*Настройка NTP-сервера на R3*
+
+<img width="417" height="99" alt="Снимок экрана 2026-04-20 171211" src="https://github.com/user-attachments/assets/a4beb05d-9002-4a17-a243-42bd0b3ab778" />
+
+*Настройка NTP-сервера на MLS1*
+
+Шаг 2
+Включаем SNMP на R1 и R2, используя пароль "cisco" для сообщений set и get.
+
+<img width="549" height="52" alt="Снимок экрана 2026-04-20 171303" src="https://github.com/user-attachments/assets/61692e82-31ca-47ef-b879-0dc8e48f8ced" />
+
+*SNMP на R1*
+
+<img width="546" height="43" alt="Снимок экрана 2026-04-20 171804" src="https://github.com/user-attachments/assets/a76da8b0-01bd-4975-8d2b-fc08c6c5e16d" />
+
+*SNMP на R2*
+
+Шаг 3
+Включаем telnet на R2, используя сервер(10.0.0.100) в качестве ААА-сервера в качестве первого метода аутентификации.
+
+<img width="514" height="86" alt="Снимок экрана 2026-04-20 171809" src="https://github.com/user-attachments/assets/aa1561da-a82d-4e88-907e-878d2aa9bf97" />
+*telnet на R2*
+
+Шаг 4
+Настраиваем R1 на использование сервера(10.0.0.100) в качестве FTP-сервера, используя имя пользователя "cisco" и пароль "cisco".
+
+<img width="301" height="26" alt="Снимок экрана 2026-04-20 172429" src="https://github.com/user-attachments/assets/8b89f00c-f9d7-4eb6-b118-a560af21d9a3" />
+
+*Настраиваем R1 на использование сервера в качестве FTP-сервера*
+
+Шаг 5
+Отправляем копию текущей конфигурации R1 на сервер 10.0.0.100, используя протокол FTP.
+
+<img width="397" height="123" alt="Снимок экрана 2026-04-20 172603" src="https://github.com/user-attachments/assets/ac26d063-343d-4507-8272-e08b367af308" />
+
+*Отправляем копию конфига R1 на сервер с помощью FTP протокола*
+
+Шаг 6
+Отправляем копию текущей конфигурации R2 на сервер 10.0.0.100, используя протокол TFTP.
+
+<img width="396" height="128" alt="Снимок экрана 2026-04-20 173009" src="https://github.com/user-attachments/assets/9ac6f550-c8e7-4fdd-abed-3df1d2f0cdeb" />
+
+*Отправляем копию конфига R2 на сервер с помощью TFTP протокола*
+
+<img width="696" height="705" alt="Снимок экрана 2026-04-20 173014" src="https://github.com/user-attachments/assets/84f3f50c-dffa-4b46-9424-700348724d4a" />
+
+*Проверка на сервере*
+
+## Шаг 7
+Проверяем, что не используем никаких команд boot system в R2.
+
+<img width="301" height="27" alt="image" src="https://github.com/user-attachments/assets/cc3b0aba-fc2f-432a-8068-407ab2a21584" />
+
+*На R2 не используются команды boot system*
+
+## Шаг 8
+Проверяем, что R1 может пинговать, используяимя "standby".
+
+<img width="510" height="109" alt="Снимок экрана 2026-04-20 174017" src="https://github.com/user-attachments/assets/4c6090ef-c889-4169-bb4f-7f37ea5d533f" />
+
+*Проверка пинга на R1*
+
+## Шаг 9
+Перезагружаем R2 и нажимаем Ctrl+Break для входа в режим ROMMON.
+
+<img width="510" height="689" alt="Снимок экрана 2026-04-20 180821" src="https://github.com/user-attachments/assets/3438477b-652c-4403-a0d6-73cb6d482467" />
+
+*Вход в режим ROMMON*
+
+Вводим confreg 0x2142, чтобы игнорировать конфиг при загрузке, затем вводим reset.
+
+
+
+*Вводим команды*
+
+Перезагружается.
+<img width="683" height="708" alt="Снимок экрана 2026-04-20 180906" src="https://github.com/user-attachments/assets/eaab6684-adb9-4eb3-8dd2-e2ad536801c7" />
+* *
+
+Догружается наша конфигурация.
+
+
+
+---
+
+```
+SW1
