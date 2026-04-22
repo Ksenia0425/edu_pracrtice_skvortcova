@@ -722,7 +722,7 @@ end
 ```
 
 ```
-## rus-msk-r2
+rus-msk-r2
 !
 version 15.1
 no service timestamps log datetime msec
