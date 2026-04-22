@@ -508,7 +508,7 @@ IP-адреса при использовании туннелей должны 
 ---
 # Блок код
 ```
-rus-msk-mls1
+## rus-msk-mls1
 !
 version 12.2(37)SE1
 no service timestamps log datetime msec
@@ -640,7 +640,7 @@ end
 ```
 
 ```
-rus-msk-r1
+## rus-msk-r1
 !
 version 15.1
 no service timestamps log datetime msec
@@ -724,7 +724,7 @@ end
 ```
 
 ```
-rus-msk-r2
+## rus-msk-r2
 !
 version 15.1
 no service timestamps log datetime msec
@@ -830,7 +830,7 @@ end
 
 ```
 
-rus-msk-s1
+## rus-msk-s1
 !
 version 15.0
 no service timestamps log datetime msec
@@ -918,7 +918,7 @@ end
 ```
 ```
 
-rus-nsk-r3
+## rus-nsk-r3
 !
 version 15.1
 no service timestamps log datetime msec
@@ -1041,7 +1041,7 @@ end
 ```
 
 ```
-rus-nsk-s2
+## rus-nsk-s2
 !
 version 15.0
 no service timestamps log datetime msec
@@ -1164,7 +1164,7 @@ end
 
 ```
 ```
-rus-nsk-s3
+## rus-nsk-s3
 !
 version 15.0
 no service timestamps log datetime msec
