@@ -179,13 +179,6 @@
 
 <img width="425" height="218" alt="Снимок экрана 2026-04-16 180719" src="https://github.com/user-attachments/assets/71cba6b6-2b7d-4358-ba72-e954907b98ee" />
 
-*Успешный пинг*
-
-## Шаг 4
-3.0.0.101 пингуем с РС3.
-
-<img width="425" height="218" alt="Снимок экрана 2026-04-16 180719" src="https://github.com/user-attachments/assets/71cba6b6-2b7d-4358-ba72-e954907b98ee" />
-
 _Успешный пинг_
 
 # Часть 3
