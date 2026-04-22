@@ -187,28 +187,35 @@ _Успешный пинг_
 
 <img width="266" height="30" alt="Снимок экрана 2026-04-21 161232" src="https://github.com/user-attachments/assets/5c348726-ff68-46af-a0b2-29303de2cac4" />
 
+*Имя на MLS*
+
 ## Шаг 2
 Включаем возможности маршрутизации на MLS.
 
 <img width="233" height="17" alt="Снимок экрана 2026-04-16 181129" src="https://github.com/user-attachments/assets/8ebbacfb-e2c5-49f7-9912-2bbed4373c46" />
+
+*Включаем маршрутизацию*
 
 ## Шаг 3
 Создаём VLAN 100 с именем Sales_dept и VLAN 200 с именем IT_dept.
 
 <img width="299" height="84" alt="Снимок экрана 2026-04-16 181134" src="https://github.com/user-attachments/assets/8147ad1d-823d-4bb1-b94d-c66cd3defd65" />
 
+*Создаем  VLAN 100, 200*
 
 ## Шаг 4
 Назнаем интерфейс f0/4 VLAN 100, а интерфейс f0/5 VLAN 200.
 
 <img width="385" height="167" alt="Снимок экрана 2026-04-16 181748" src="https://github.com/user-attachments/assets/33582170-9108-4e42-bac8-256c8bf8349d" />
 
+*Назначаем интерфейсам VLAN-ы*
 
 ## Шаг 5
 Включаем маршрутизацию между VLAN 100 и VLAN 200, используя SVI (Switch Virtual Interface) на MLS, с требованиями по заданию (VLAN 100 - 100.0.0.50/8, VLAN 200 - 200.0.0.50/24.
 
 <img width="589" height="296" alt="Снимок экрана 2026-04-20 143559" src="https://github.com/user-attachments/assets/4e2e284b-bf1a-4b52-8aa8-be5eca49d576" />
 
+*Назначаем интерфейсам адреса*
 
 ## Шаг 6
 Изменяем интерфейсы f0/1(11.0.0.50/8), f0/2(12.0.0.50/8) и f0/3(40.40.40.50/24) на интерфейсы 3-го уровня со следующими требованиями.
@@ -218,7 +225,6 @@ _Успешный пинг_
 *Интерфейс f0/1*
 
 <img width="446" height="73" alt="Снимок экрана 2026-04-20 143826" src="https://github.com/user-attachments/assets/7cb66a97-1f05-4a8c-96e6-efe69c933c54" />
-
 
 *Интерфейс f0/2*
 
@@ -231,46 +237,52 @@ _Успешный пинг_
 
 <img width="448" height="230" alt="Снимок экрана 2026-04-20 144903" src="https://github.com/user-attachments/assets/551b21ea-a36d-49ef-b133-2fda2e8e1394" />
 
+*Успешный пинг*
+
 # Часть 4
 ## Шаг 1
 Настройте IP-адреса f0/0 маршрутизатора R1 - 10.0.0.2/8, f0/1 - 11.0.0.2/8.
 
 <img width="623" height="309" alt="Снимок экрана 2026-04-20 145927" src="https://github.com/user-attachments/assets/342c1e44-d8a4-4e64-84c0-e69412f30de9" />
 
+*Настройка IP-адресов на R1*
+
 ## Шаг 2
 Настроиваем IP-адрес f0/0 маршрутизатора R2 - 10.0.0.3/8, f0/1 - 12.0.0.3/8.
 
 <img width="625" height="286" alt="Снимок экрана 2026-04-20 150131" src="https://github.com/user-attachments/assets/d0028ad7-8847-4619-a815-3629619ae0a5" />
+
+*Настройка IP-адресов на R2*
 
 ## Шаг 3
 Настраиваем протокол Cisco High availability на R1 и R2 в Москве с требованиями по заданию.
 
 <img width="506" height="233" alt="Снимок экрана 2026-04-20 150640" src="https://github.com/user-attachments/assets/3d1c5db0-57c4-4087-b019-0cfaadaa440a" />
 
-*Настройка на R1*
+*Настройка протокола Cisco High availability на R1*
 
 <img width="512" height="257" alt="Снимок экрана 2026-04-20 151631" src="https://github.com/user-attachments/assets/de160d4e-4414-4365-a98c-ebe6f0ae6e5a" />
 
-*Настройка на R2*
+*Настройка протокола Cisco High availability на R2*
 
 # Часть 5
 ## Шаг 1
 Настроиваем EIGRP с номером автономной системы (AS) 100 на R1, R2, R3 и MLS.
 
 <img width="317" height="86" alt="Снимок экрана 2026-04-20 153408" src="https://github.com/user-attachments/assets/9a7eab1e-33d4-4d2f-9f44-5f583170602c" />
-*R1*
+*EIGRP на R1*
 
 <img width="386" height="158" alt="Снимок экрана 2026-04-20 153542" src="https://github.com/user-attachments/assets/80203399-4b0f-419b-979d-25f7524e534d" />
 
-*R2*
+*EIGRP на R2*
 
 <img width="321" height="139" alt="Снимок экрана 2026-04-20 153314" src="https://github.com/user-attachments/assets/83468930-b266-4758-b741-0e3d5f3a260d" />
 
-*R3*
+*EIGRP на R3*
 
 <img width="622" height="312" alt="Снимок экрана 2026-04-20 153710" src="https://github.com/user-attachments/assets/9d6dd7ea-f889-4efc-8a00-c07da7072b02" />
 
-*MLS*
+*EIGRP на MLS*
 
 ## Шаг 2
 Проверяем, обеспечив возможность подключения по SSH с сервера(10.0.0.100), подключенного к подсети 10.0.0.0/8 (R1 и R2), к S1 и SW3.
@@ -298,20 +310,24 @@ _Успешный пинг_
 
 <img width="615" height="50" alt="Снимок экрана 2026-04-20 161956" src="https://github.com/user-attachments/assets/19795033-26ef-44f7-b499-b4768360bab6" />
 
+*Настраиваем расширенный список контроля доступа (ACL) для фильтрации веб-трафика*
+
 <img width="324" height="60" alt="Снимок экрана 2026-04-20 162019" src="https://github.com/user-attachments/assets/0965b2e2-d510-4d62-bc54-1a630675c449" />
 
+*Активируем список доступа*
 
+🥀
 
 ## Шаг 3
 Настройте R1 и R2 так, чтобы они могли пинговать любые машины, но никогда не отвечали на запросы ping, поступающие от каких-либо машин.
 
 <img width="420" height="98" alt="Снимок экрана 2026-04-20 162453" src="https://github.com/user-attachments/assets/81bd9337-c8eb-43fe-87b5-d044a09b9cbe" />
 
-*R1*
+*Настраиваем и применяем фильтр, который запрещает пинговать устройства на R1*
 
 <img width="435" height="84" alt="Снимок экрана 2026-04-20 162612" src="https://github.com/user-attachments/assets/820d77d6-8760-4d12-969a-aac10f5649a8" />
 
-*R2*
+*Настраиваем и применяем фильтр, который запрещает пинговать устройства на R2*
 
 # Часть 7
 ## Шаг 1
@@ -319,21 +335,25 @@ _Успешный пинг_
 
 <img width="578" height="130" alt="Снимок экрана 2026-04-20 163730" src="https://github.com/user-attachments/assets/7cdedd52-2dcf-4008-8e2c-bd5896cf6083" />
 
+*Создание и настройка loopback-интерфейс 1*
+
 ## Шаг 2
 Создаем loopback-интерфейс 3 на маршрутизаторе R2 с IP-адресом 192.168.103.3/24.
 
 <img width="573" height="118" alt="Снимок экрана 2026-04-20 163830" src="https://github.com/user-attachments/assets/08722506-3983-4319-96fb-caab34eae087" />
+
+*Создание и настройка loopback-интерфейс 3*
 
 ## Шаг 3
 Проверяем, что R3 и R2 объявляют эти loopback-интерфейсы друг другу, используя RIPv2.
 
 <img width="339" height="124" alt="image" src="https://github.com/user-attachments/assets/50087ac3-04d7-4783-9505-7f583fe323cd" />
 
-*На R3*
+*Настройка динамической маршрутизации по протоколу RIPv2 на R3*
 
 <img width="336" height="114" alt="image" src="https://github.com/user-attachments/assets/ce80db7d-4192-4db5-9436-e0bf8cc64a52" />
 
-*На R2*
+*Настройка динамической маршрутизации по протоколу RIPv2 на R2*
 
 ## Шаг 4
 RIPv2 должен работать ТОЛЬКО на R3 и R2.
@@ -351,11 +371,11 @@ IP-адреса при использовании туннелей должны 
 
 <img width="548" height="194" alt="image" src="https://github.com/user-attachments/assets/1dc81555-b4e9-4b09-b0a2-ece450f82d0a" />
 
-*На R3*
+*Туннель на R3*
 
 <img width="545" height="208" alt="image" src="https://github.com/user-attachments/assets/176e62bf-2774-47b2-9735-31819f2ada4e" />
 
-*На R2*
+*Туннель на R2*
 
 ## Шаг 6
 С помощью расширенного ping проверяем, что loopback-интерфейс R3 может пинговать loopback-интерфейс R2.
@@ -383,7 +403,7 @@ IP-адреса при использовании туннелей должны 
 
 *Настройка NTP-сервера на MLS1*
 
-Шаг 2
+## Шаг 2
 Включаем SNMP на R1 и R2, используя пароль "cisco" для сообщений set и get.
 
 <img width="549" height="52" alt="Снимок экрана 2026-04-20 171303" src="https://github.com/user-attachments/assets/61692e82-31ca-47ef-b879-0dc8e48f8ced" />
@@ -394,27 +414,28 @@ IP-адреса при использовании туннелей должны 
 
 *SNMP на R2*
 
-Шаг 3
+## Шаг 3
 Включаем telnet на R2, используя сервер(10.0.0.100) в качестве ААА-сервера в качестве первого метода аутентификации.
 
 <img width="514" height="86" alt="Снимок экрана 2026-04-20 171809" src="https://github.com/user-attachments/assets/aa1561da-a82d-4e88-907e-878d2aa9bf97" />
+
 *telnet на R2*
 
-Шаг 4
+## Шаг 4
 Настраиваем R1 на использование сервера(10.0.0.100) в качестве FTP-сервера, используя имя пользователя "cisco" и пароль "cisco".
 
 <img width="301" height="26" alt="Снимок экрана 2026-04-20 172429" src="https://github.com/user-attachments/assets/8b89f00c-f9d7-4eb6-b118-a560af21d9a3" />
 
 *Настраиваем R1 на использование сервера в качестве FTP-сервера*
 
-Шаг 5
+## Шаг 5
 Отправляем копию текущей конфигурации R1 на сервер 10.0.0.100, используя протокол FTP.
 
 <img width="397" height="123" alt="Снимок экрана 2026-04-20 172603" src="https://github.com/user-attachments/assets/ac26d063-343d-4507-8272-e08b367af308" />
 
 *Отправляем копию конфига R1 на сервер с помощью FTP протокола*
 
-Шаг 6
+## Шаг 6
 Отправляем копию текущей конфигурации R2 на сервер 10.0.0.100, используя протокол TFTP.
 
 <img width="396" height="128" alt="Снимок экрана 2026-04-20 173009" src="https://github.com/user-attachments/assets/9ac6f550-c8e7-4fdd-abed-3df1d2f0cdeb" />
@@ -449,7 +470,6 @@ IP-адреса при использовании туннелей должны 
 Вводим confreg 0x2142, чтобы игнорировать конфиг при загрузке, затем вводим reset.
 
 <img width="225" height="30" alt="Снимок экрана 2026-04-20 180848" src="https://github.com/user-attachments/assets/d412a845-2d4e-4537-b2c7-275ba1b8a681" />
-
 
 *Вводим команды*
 
