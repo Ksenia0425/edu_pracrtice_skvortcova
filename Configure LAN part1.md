@@ -417,17 +417,28 @@ IP-адреса при использовании туннелей должны 
 
 Вводим confreg 0x2142, чтобы игнорировать конфиг при загрузке, затем вводим reset.
 
+<img width="225" height="30" alt="Снимок экрана 2026-04-20 180848" src="https://github.com/user-attachments/assets/d412a845-2d4e-4537-b2c7-275ba1b8a681" />
 
 
 *Вводим команды*
 
 Перезагружается.
+
 <img width="683" height="708" alt="Снимок экрана 2026-04-20 180906" src="https://github.com/user-attachments/assets/eaab6684-adb9-4eb3-8dd2-e2ad536801c7" />
-* *
+
+*Перезагружка R2*
 
 Догружается наша конфигурация.
 
+<img width="590" height="229" alt="Снимок экрана 2026-04-20 180959" src="https://github.com/user-attachments/assets/8dfe3ca2-36c8-4052-bcb4-cb517f944b8d" />
 
+*Догружается конфигурация на R2*
+
+Изменяем пользователя и пароль, ворачиваем регистр обратно.
+
+<img width="376" height="32" alt="Снимок экрана 2026-04-20 181515" src="https://github.com/user-attachments/assets/ea924ad9-8ac7-4e43-9040-6c22700fba21" />
+
+*Изменение пользователя и пароля на R2*
 
 ---
 
