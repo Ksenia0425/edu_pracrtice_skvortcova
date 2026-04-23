@@ -30,3 +30,11 @@
 <img width="629" height="224" alt="Снимок экрана 2026-04-23 153909" src="https://github.com/user-attachments/assets/7605ac8d-01ab-4e24-86e9-60322e1ccade" />
 
 *Раздача IP-адресов интерфейсам на R3*
+
+## Шаг 5
+Настраиваем R1973 согласно требованиям.
+
+<img width="599" height="266" alt="Снимок экрана 2026-04-23 163031" src="https://github.com/user-attachments/assets/cb4c2b75-6161-4aa9-b1cc-e7f3eb2feb9d" />
+
+*Раздача IP-адресов интерфейсам на R1973*
+
