@@ -98,6 +98,10 @@
 
 *Настройка на R2*
 
+<img width="436" height="64" alt="image" src="https://github.com/user-attachments/assets/a1c354fd-fdc1-4802-a685-3f7e2d4e7878" />
+
+*Настройка на R3*
+
 ## Шаг 4
 Используем ID процесса 100 для OSPF на всех маршрутизаторах (R1, R2 и R3).
 
@@ -116,26 +120,57 @@
 ## Шаг 5
 Настраиваем интерфейс f0/0 на маршрутизаторе R1, чтобы он принадлежал зоне 1.
 
+<img width="237" height="34" alt="image" src="https://github.com/user-attachments/assets/b859dc57-cb8c-4e74-bec4-5278db936d65" />
+
+*f0/0 на R1 принадлежит зоне 1*
+
 ## Шаг 6
 Настраиваем интерфейс f0/1 на маршрутизаторе R1, чтобы он принадлежал зоне 0.
 
+<img width="236" height="29" alt="Снимок экрана 2026-04-24 145505" src="https://github.com/user-attachments/assets/5872100a-80c4-4a7d-ad79-84f70a6ff01b" />
+
+*f0/1 на R1 принадлежит зоне 0*
 
 ## Шаг 7
 Настраиваем интерфейс f0/0 на маршрутизаторе R2, чтобы он принадлежал зоне 23.
 
+<img width="250" height="35" alt="image" src="https://github.com/user-attachments/assets/e689ba08-ca8a-488d-82ab-91d5fdfed6bf" />
+
+*f0/0 на R2 принадлежит зоне 23*
 
 ## Шаг 8
 Настраиваем интерфейс f0/1 на маршрутизаторе R2, чтобы он принадлежал зоне 0.
 
+<img width="238" height="34" alt="image" src="https://github.com/user-attachments/assets/3337ac03-1f5c-4e36-8b50-d8e078c92151" />
+
+*f0/1 на R2 принадлежит зоне 0*
 
 ## Шаг 9
-Настраиваем интерфейсы f0/0, loopback3 и loopback33 на R3, чтобы они принадлежали зоне 23.
+Настраиваем интерфейсы g0/0, loopback3 и loopback33 на R3, чтобы они принадлежали зоне 23.
+
+<img width="248" height="117" alt="image" src="https://github.com/user-attachments/assets/a4300fb7-23e1-46a7-a583-d4b897ae17c9" />
+
+*g0/0, loopback3 и loopback33 на R3 принадлежат зоне 23*
 
 ## Шаг 10
 Блокируем отправку hello-пакетов OSPF на всех интерфейсах маршрутизатора R1, кроме интерфейса f0/1.
 
+<img width="629" height="145" alt="image" src="https://github.com/user-attachments/assets/e7d27b02-adc0-4101-8d40-d309d7fb972b" />
+
+*Блокировка hello-пакетов OSPF на интерфейсах R1, кроме f0/1*
+
 ## Шаг 11
 Настраиваем маршрутизатор R2, чтобы он всегда был назначенным маршрутизатором (DR) на всех многодоступовых сетях (broadcast и NBMA).
 
+<img width="257" height="89" alt="image" src="https://github.com/user-attachments/assets/39e88f88-b767-4681-961b-1300104baa8b" />
+
+*R2 назначенный маршрутизатор на всех многодоступовых сетях*
+
+<img width="565" height="456" alt="image" src="https://github.com/user-attachments/assets/a7bb5f91-1db8-434b-a6bc-868cb8296727" />
+
+*Проверка на R2 ip ospf*
+
 ## Шаг 12
 Настраиваем маршрутизатор R3, чтобы он работал в качестве шлюза по умолчанию для всех маршрутизаторов OSPF и они могли взаимодействовать с любыми другими сетями.
+
+
