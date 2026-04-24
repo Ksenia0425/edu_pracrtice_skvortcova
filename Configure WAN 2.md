@@ -173,4 +173,97 @@
 ## Шаг 12
 Настраиваем маршрутизатор R3, чтобы он работал в качестве шлюза по умолчанию для всех маршрутизаторов OSPF и они могли взаимодействовать с любыми другими сетями.
 
+<img width="361" height="24" alt="image" src="https://github.com/user-attachments/assets/02ad5ccf-1c6f-4faf-9c45-19e9247a4d34" />
 
+*Статический маршрут по умполчанию на R3*
+
+<img width="345" height="32" alt="image" src="https://github.com/user-attachments/assets/04127ff8-62e5-4066-8ad0-997be7ee8b8a" />
+
+*Делаем R3 шлюзом по умполчанию*
+
+<img width="541" height="362" alt="image" src="https://github.com/user-attachments/assets/6b4c7a3f-b153-49f6-b5e3-f956444ce6e4" />
+
+*Проверка*
+
+# Часть 4
+## Шаг 1-3
+Настраиваем BGP между R3 и R1973. Указываем, что все маршрутизаторы, использующие протокол OSPF, находятся в автономной системе BGP (AS) номер 3. Настраиваем маршрутизатор R1973, чтобы он находился в автономной системе BGP (AS) номер 1973.
+
+<img width="175" height="23" alt="image" src="https://github.com/user-attachments/assets/9fde23c7-2b3b-44b6-9ac3-3a5a6a3b97e8" />
+
+*На R3 BGP*
+
+<img width="219" height="15" alt="image" src="https://github.com/user-attachments/assets/a70cbb6d-eae5-46db-bb5a-465fa4d50de8" />
+
+*На R1973 BGP*
+
+## Шаг 4
+Настраиваем маршрутизатор R3 для установления внешнего BGP-соседства с маршрутизатором R1973.
+
+<img width="431" height="37" alt="image" src="https://github.com/user-attachments/assets/37c87c47-9dcb-431f-a025-69dffad376bf" />
+
+*R3 для внешнего BGP-соседства*
+
+<img width="443" height="39" alt="image" src="https://github.com/user-attachments/assets/5143fc93-56f0-4b9f-a0c8-f197205ed58b" />
+
+*R1973 для внешнего BGP-соседства*
+
+## Шаг 5
+Настраиваем маршрутизатор R1973 так, чтобы он объявил свой loopback-интерфейс маршрутизатору R3.
+
+<img width="422" height="25" alt="image" src="https://github.com/user-attachments/assets/c3f233d2-1c24-4a31-8977-b0905922343b" />
+
+*R1973 объявляет loopback-интерфейс маршрутизатору R3*
+
+## Шаг 6
+Настраиваем маршрутизатор R1973 так, чтобы маршрут по умолчанию указывал на маршрутизатор R3.
+
+<img width="385" height="17" alt="image" src="https://github.com/user-attachments/assets/7bad43e6-4dde-4203-bf43-34e5194a8aa8" />
+
+*На R1973 маршрут по умолчанию указывал на R3*
+
+<img width="260" height="34" alt="image" src="https://github.com/user-attachments/assets/478da0d2-e3fd-4a5a-b434-2ae660d8ec33" />
+
+*Проверяем маршрут по умолчанию*
+
+# Часть 5
+## Шаг 1
+Проверяем, что IOS на R3 поддерживает все команды VOIP и расширенные настройки безопасности, используя для этого оценочную лицензию.
+
+<img width="575" height="96" alt="image" src="https://github.com/user-attachments/assets/5b234dff-eb99-41a6-b559-f6a40d39b341" />
+
+*Проверяем использование оценочной стоимости*
+
+Шаг 2
+Устанавиливаем лицензии UCK9.
+
+<img width="506" height="351" alt="Снимок экрана 2026-04-24 170907" src="https://github.com/user-attachments/assets/13aca22e-684d-49f7-ba56-c0a7d5ed8989" />
+
+*Устанавливаем лиценцию UCK9*
+
+<img width="654" height="273" alt="image" src="https://github.com/user-attachments/assets/f6736e19-f85e-4852-8daf-4e0e0d8d1562" />
+
+*Соглашаемся и всё устанавливается*
+
+Шаг 3
+Устанавливаем лицензии securityk9.
+
+<img width="551" height="397" alt="image" src="https://github.com/user-attachments/assets/d3b2f8dc-de20-4a55-9754-ba022a759fcf" />
+
+*Устанавливаем лицензии securityk9*
+
+<img width="648" height="287" alt="image" src="https://github.com/user-attachments/assets/61062462-2db7-485b-985b-5af66a4c77e4" />
+
+*Соглашаемся и всё устанавливается*
+
+Шаг 4
+Сохраняем конфигурацию.
+
+<img width="285" height="75" alt="image" src="https://github.com/user-attachments/assets/efaa833a-9653-4153-bc62-dec5cb07178b" />
+
+*Конфигурация сохранена*
+Шаг 5
+Перезагрузите маршрутизатор.
+<img width="634" height="376" alt="image" src="https://github.com/user-attachments/assets/95eed1dc-fd1c-4f4c-9329-01700a970c97" />
+
+*Перезагрузка*
