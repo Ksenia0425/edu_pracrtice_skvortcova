@@ -234,7 +234,7 @@
 
 *Проверяем использование оценочной стоимости*
 
-Шаг 2
+## Шаг 2
 Устанавиливаем лицензии UCK9.
 
 <img width="506" height="351" alt="Снимок экрана 2026-04-24 170907" src="https://github.com/user-attachments/assets/13aca22e-684d-49f7-ba56-c0a7d5ed8989" />
@@ -245,7 +245,7 @@
 
 *Соглашаемся и всё устанавливается*
 
-Шаг 3
+## Шаг 3
 Устанавливаем лицензии securityk9.
 
 <img width="551" height="397" alt="image" src="https://github.com/user-attachments/assets/d3b2f8dc-de20-4a55-9754-ba022a759fcf" />
@@ -256,13 +256,13 @@
 
 *Соглашаемся и всё устанавливается*
 
-Шаг 4
+## Шаг 4
 Сохраняем конфигурацию.
 
 <img width="285" height="75" alt="image" src="https://github.com/user-attachments/assets/efaa833a-9653-4153-bc62-dec5cb07178b" />
 
 *Конфигурация сохранена*
-Шаг 5
+## Шаг 5
 Перезагрузите маршрутизатор.
 <img width="634" height="376" alt="image" src="https://github.com/user-attachments/assets/95eed1dc-fd1c-4f4c-9329-01700a970c97" />
 
