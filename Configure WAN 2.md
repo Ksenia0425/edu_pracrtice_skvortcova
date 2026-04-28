@@ -301,7 +301,7 @@
 
 <img width="373" height="71" alt="Снимок экрана 2026-04-28 152242" src="https://github.com/user-attachments/assets/15f80731-9662-4d8b-bde4-70bee8da55d1" />
 
-*IPv6 адерса на R1 на интерфейсе f0/0*
+*IPv6 адерса на R1 на интерфейсе f0/0, делаем локальный адрес*
 
 <img width="338" height="101" alt="image" src="https://github.com/user-attachments/assets/e6ef0a3e-3d95-44a0-a2ae-9ef294889257" />
 
@@ -356,13 +356,87 @@
 ## Шаг 3
 Проверяем, что интерфейс f0/0 на маршрутизаторе R1 использует локальный адрес канала fe80::1.
 
-<img width="323" height="41" alt="image" src="https://github.com/user-attachments/assets/aedc0e65-df7b-43a4-89c1-dda8f8a4c26e" />
-
-*Делаем локальный адрес на R1 на f0/0*
-
 <img width="433" height="352" alt="image" src="https://github.com/user-attachments/assets/265611f5-1302-418d-ae96-5238f99a89d4" />
 
 *Проверяем*
 
-Шаг 4
+## Шаг 4
 Проверяем, что R1 использует функцию EUI-64 для своего глобального адреса на интерфейсе f0/0.
+
+<img width="409" height="315" alt="image" src="https://github.com/user-attachments/assets/a09227f9-fc97-46c3-a245-edf35b8be61e" />
+
+*R1 использует EUI-64 для своего глобального адреса на f0/0*
+
+# Часть 8
+## Шаг 1
+Настраиваем OSPFv3 между R1, R2 и R3.
+
+<img width="229" height="22" alt="image" src="https://github.com/user-attachments/assets/0dffdc87-1ba9-4092-9390-cf23a6ae32e4" />
+
+*OSPFv3 на R1*
+
+<img width="237" height="31" alt="image" src="https://github.com/user-attachments/assets/5fcbd71e-aabe-49f2-9c27-c7931547bb1a" />
+
+*OSPFv3 на R2*
+
+<img width="231" height="29" alt="image" src="https://github.com/user-attachments/assets/098d619d-8cda-47e1-9912-992d06b58cb3" />
+
+*OSPFv3 на R3*
+
+## Шаг 2
+Настраиваем на R1 router-id 0.0.0.1, на R2 router-id 0.0.0.2, на R3 router-id 0.0.0.3.
+
+<img width="234" height="19" alt="image" src="https://github.com/user-attachments/assets/bb6810e0-9bc2-4540-9f17-881bfe59fb70" />
+
+*R1*
+
+<img width="238" height="23" alt="image" src="https://github.com/user-attachments/assets/28b0a3b3-fc4e-425c-b1c9-c62e4971700e" />
+
+*R2*
+
+<img width="238" height="16" alt="image" src="https://github.com/user-attachments/assets/60fa35cc-5cd5-4b55-a0a8-1c5dda3369bd" />
+
+*R3*
+
+## Шаг 3
+R1, R2 и R3 объявляют все подключенные сети IPv6.
+
+<img width="258" height="39" alt="image" src="https://github.com/user-attachments/assets/bfa37928-a247-42f4-9086-37b5d01097bf" />
+
+*На R1 f0/0*
+
+<img width="258" height="34" alt="image" src="https://github.com/user-attachments/assets/29df0315-9648-4d2f-a535-81556c1669ca" />
+
+*На R1 f0/1*
+
+<img width="268" height="46" alt="image" src="https://github.com/user-attachments/assets/a90b434f-2e3e-4e2b-8b9e-3a187f7d859e" />
+
+*На R2 f0/0*
+
+<img width="248" height="33" alt="image" src="https://github.com/user-attachments/assets/b01613e3-0c8c-4180-beac-4a707ba3de85" />
+
+*На R2 f0/1*
+
+<img width="262" height="32" alt="image" src="https://github.com/user-attachments/assets/eb546238-f1f5-4637-8f50-15d208e15744" />
+
+*На R3 f0/0*
+
+## Шаг 4
+Используйте номер процесса 100 для всех маршрутизаторов.
+
+<img width="226" height="23" alt="image" src="https://github.com/user-attachments/assets/b8bd6d6e-f812-4154-9d25-9e9c6a5c1039" />
+
+*Номер процесса 100*
+
+## Шаг 5
+На интерфейсe f0/0 маршрутизатор R1 подключен к Area 1, на интерфейсе f0/1 маршрутизатор R1 подключен к Area 0.
+
+*Проверка*
+
+Шаг 6: Интерфейс f0/0 маршрутизатора R2 будет подключен к Area 23, интерфейс f0/1
+маршрутизатора R2 будет подключен к Area 0.
+Шаг 7: Интерфейс g0/0 маршрутизатора R3 будет подключен к Area 23.
+Шаг 8: R1 не должен отправлять hello-сообщения из всех своих текущих и будущих
+добавленных интерфейсов, кроме f0/1.
+Шаг 9: Настройте R3 для работы в качестве шлюза по умолчанию для всех
+маршрутизаторов OSPF для связи с любыми другими сетями.
