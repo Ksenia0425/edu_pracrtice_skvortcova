@@ -435,28 +435,28 @@ R1, R2 и R3 объявляют все подключенные сети IPv6.
 
 *Проверка*
 
-Шаг 6
+## Шаг 6
 На интерфейсе f0/0 маршрутизатор R2 подключен к Area 23, на интерфейсе f0/1 маршрутизатор R2 подключен к Area 0.
 
 <img width="543" height="82" alt="image" src="https://github.com/user-attachments/assets/0b16c0fd-1a10-42b6-a945-f430b654a58b" />
 
 *Проверка*
 
-Шаг 7
+## Шаг 7
 На интерфейсе g0/0 маршрутизатор R3 подключен к Area 23.
 
 <img width="494" height="58" alt="image" src="https://github.com/user-attachments/assets/dc0d9849-43d3-474b-9197-0f4803b163f2" />
 
 *Проверка*
 
-Шаг 8
+## Шаг 8
 Настраиваем, чтобы на R1 не отправлялись hello-сообщения из всех своих текущих и будущих добавленных интерфейсов, кроме f0/1.
 
 <img width="620" height="105" alt="image" src="https://github.com/user-attachments/assets/8fe71a25-86d5-4366-922a-b5781c71e387" />
 
 *R1 принимает hello-сообщения только с f0/0*
 
-Шаг 9
+## Шаг 9
 Настраиваем на R3 для работы в качестве шлюза по умолчанию для всех маршрутизаторов OSPF для связи с любыми другими сетями.
 
 <img width="332" height="21" alt="image" src="https://github.com/user-attachments/assets/60bafae5-488a-4c0f-8bad-3bedff07fb3e" />
@@ -470,3 +470,64 @@ R1, R2 и R3 объявляют все подключенные сети IPv6.
 <img width="541" height="321" alt="image" src="https://github.com/user-attachments/assets/487304f0-9315-4343-8684-60c7b030d4ad" />
 
 *Проверяем на R1*
+
+# Часть 9
+## Шаг 1
+Настраиваем EIGRPv6 между R3 и R1973.
+
+<img width="241" height="38" alt="image" src="https://github.com/user-attachments/assets/32a0f30a-0338-46d9-8425-fb7a6278aaeb" />
+
+*EIGRPv6 на R3*
+
+<img width="259" height="35" alt="image" src="https://github.com/user-attachments/assets/f75ee6b1-ccb5-4203-bd2f-6af1e2c66d57" />
+
+*EIGRPv6 на R1973*
+
+Шаг 2
+Указываем номер автономной системы (AS) 100.
+
+<img width="385" height="231" alt="image" src="https://github.com/user-attachments/assets/2d9f1965-7794-47ed-95cc-a7b9104dab82" />
+
+*Проверка*
+
+Шаг 3
+R3 использует router-id 0.0.0.3, R1973 использует router-id 0.0.0.73.
+
+<img width="284" height="34" alt="image" src="https://github.com/user-attachments/assets/9e459678-2f05-4550-9c22-25b51a0c704d" />
+
+*R3*
+
+<img width="320" height="34" alt="image" src="https://github.com/user-attachments/assets/344cd9c0-98e7-4ac4-a942-7d754f8f786c" />
+
+*R1973*
+
+Шаг 4
+R1973 объявляет свою петлевую сеть (loopback) для R3 через EIGRPv6.
+
+<img width="230" height="73" alt="image" src="https://github.com/user-attachments/assets/b9b5c8d7-9306-4214-813d-983e2a6ff9a9" />
+
+*Настройка на R1973*
+
+<img width="217" height="48" alt="image" src="https://github.com/user-attachments/assets/21412286-ff49-4bca-9315-cdab29a51576" />
+
+*Настройка на R3*
+
+<img width="569" height="104" alt="image" src="https://github.com/user-attachments/assets/326d0f14-b47a-4b93-97f0-ca0c5f64342f" />
+
+*Проверка на R3*
+
+Шаг 5
+Настраиваем на R1973 маршрут по умолчанию IPv6, указывающий на R3 в качестве следующего хопа для связи с любыми другими сетями.
+
+<img width="345" height="15" alt="image" src="https://github.com/user-attachments/assets/4ccb7015-1cd8-455d-b561-7f6af3edc940" />
+
+*R1973 маршрут по умолчанию IPv6, указывающий на R3 в качестве следующего хопа для связи*
+
+<img width="535" height="306" alt="image" src="https://github.com/user-attachments/assets/76c45e95-aec2-4afd-86bc-d3da14e80b8d" />
+
+*Проверяем таблицу маршрутизации*
+
+<img width="572" height="121" alt="image" src="https://github.com/user-attachments/assets/bb978ef0-e104-4eb2-b073-a7f841552902" />
+
+*Проверка EIGRPv6 соседей R1973*
+
