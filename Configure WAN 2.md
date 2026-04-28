@@ -288,9 +288,43 @@
 
 *Проверяем на R1 настройку*
 
-Шаг 2
+## Шаг 2
 Проверяем, что РC0 может получить IPv4 от DHCP-сервера с IP 10.23.23.100.
 
 <img width="691" height="303" alt="image" src="https://github.com/user-attachments/assets/b7ea4b1a-7be7-45bd-98e0-e54b99462a43" />
 
 *PC0 получил адрес*
+
+# Часть 7
+## Шаг 1
+Настраиваем маршрутизаторы R1, R2, R3, R1973 с IPv6-адресами.
+
+<img width="373" height="71" alt="Снимок экрана 2026-04-28 152242" src="https://github.com/user-attachments/assets/15f80731-9662-4d8b-bde4-70bee8da55d1" />
+
+*IPv6 адерса на R1 на интерфейсе f0/0*
+
+<img width="338" height="101" alt="image" src="https://github.com/user-attachments/assets/e6ef0a3e-3d95-44a0-a2ae-9ef294889257" />
+*IPv6 адерса на R1 на интерфейсе f0/1*
+
+<img width="365" height="90" alt="image" src="https://github.com/user-attachments/assets/d9f24a2c-0bea-4e46-a335-07c3766031ab" />
+
+*IPv6 адерса на R2 на интерфейсе f0/0*
+
+<img width="339" height="70" alt="image" src="https://github.com/user-attachments/assets/da5bbc9d-c098-4c59-a858-4ddc54cc6fa3" />
+
+*IPv6 адерса на R2 на интерфейсе f0/1*
+
+<img width="345" height="68" alt="image" src="https://github.com/user-attachments/assets/0175b533-0751-4752-ab1c-f5b918850742" />
+
+*IPv6 адерса на R3 на интерфейсе g0/0*
+
+<img width="342" height="133" alt="image" src="https://github.com/user-attachments/assets/cd398615-8017-4192-95e9-658f2aa45715" />
+
+*IPv6 адерса на R3 на интерфейсе s0/0/0*
+
+Шаг 2
+Убедитесь, что на всех маршрутизаторах включена возможность маршрутизации IPv6.
+Шаг 3
+Убедитесь, что интерфейс f0/0 на маршрутизаторе R1 использует локальный адрес канала fe80 :: 1.
+Шаг 4
+Убедитесь, что R1 использует функцию EUI-64 для своего глобального адреса на интерфейсе f0/0.
