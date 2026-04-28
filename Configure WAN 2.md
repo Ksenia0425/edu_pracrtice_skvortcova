@@ -304,6 +304,7 @@
 *IPv6 адерса на R1 на интерфейсе f0/0*
 
 <img width="338" height="101" alt="image" src="https://github.com/user-attachments/assets/e6ef0a3e-3d95-44a0-a2ae-9ef294889257" />
+
 *IPv6 адерса на R1 на интерфейсе f0/1*
 
 <img width="365" height="90" alt="image" src="https://github.com/user-attachments/assets/d9f24a2c-0bea-4e46-a335-07c3766031ab" />
@@ -322,9 +323,46 @@
 
 *IPv6 адерса на R3 на интерфейсе s0/0/0*
 
-Шаг 2
-Убедитесь, что на всех маршрутизаторах включена возможность маршрутизации IPv6.
-Шаг 3
-Убедитесь, что интерфейс f0/0 на маршрутизаторе R1 использует локальный адрес канала fe80 :: 1.
+<img width="426" height="101" alt="image" src="https://github.com/user-attachments/assets/c291f60a-6685-4a2e-b895-f48d2b7ed63d" />
+*IPv6 адерса на R1973 на интерфейсе loopback*
+
+<img width="370" height="66" alt="image" src="https://github.com/user-attachments/assets/a25fbe56-b001-4231-ad24-62a714e340d5" />
+
+*IPv6 адерса на R1973 на интерфейсе s0/0/0*
+
+## Шаг 2
+Проверяем, что на всех маршрутизаторах включена возможность маршрутизации IPv6.
+
+<img width="257" height="21" alt="image" src="https://github.com/user-attachments/assets/a3ce87a3-1a4d-41a4-9708-3ade0301910c" />
+
+*Включаем маршрутизацию IPv6 на всех маршрутизаторах*
+
+<img width="412" height="180" alt="image" src="https://github.com/user-attachments/assets/7d8fd573-bb1c-4026-ba69-70589524b387" />
+
+*Проверяем на R1*
+
+<img width="410" height="140" alt="image" src="https://github.com/user-attachments/assets/22fece4c-a37f-47f1-94a8-dd480c892419" />
+
+*Проверяем на R2*
+
+<img width="438" height="280" alt="image" src="https://github.com/user-attachments/assets/0fb62089-cdce-409d-ae2b-4473ab4a2cda" />
+
+*Проверяем на R3*
+
+<img width="395" height="242" alt="image" src="https://github.com/user-attachments/assets/ca1fb4ec-e5ec-4b06-afad-f2411e94aa6d" />
+
+*Проверяем на R1973*
+
+## Шаг 3
+Проверяем, что интерфейс f0/0 на маршрутизаторе R1 использует локальный адрес канала fe80::1.
+
+<img width="323" height="41" alt="image" src="https://github.com/user-attachments/assets/aedc0e65-df7b-43a4-89c1-dda8f8a4c26e" />
+
+*Делаем локальный адрес на R1 на f0/0*
+
+<img width="433" height="352" alt="image" src="https://github.com/user-attachments/assets/265611f5-1302-418d-ae96-5238f99a89d4" />
+
+*Проверяем*
+
 Шаг 4
-Убедитесь, что R1 использует функцию EUI-64 для своего глобального адреса на интерфейсе f0/0.
+Проверяем, что R1 использует функцию EUI-64 для своего глобального адреса на интерфейсе f0/0.
