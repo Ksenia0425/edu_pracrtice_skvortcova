@@ -267,3 +267,30 @@
 <img width="634" height="376" alt="image" src="https://github.com/user-attachments/assets/95eed1dc-fd1c-4f4c-9329-01700a970c97" />
 
 *Перезагрузка*
+
+# Часть 6
+## Шаг 1
+Настраиваем R1 в качестве DHCP-ретранслятора.
+
+<img width="682" height="281" alt="image" src="https://github.com/user-attachments/assets/27fb70d3-11bf-4faa-8558-a0b2e6b9880e" />
+
+*Даем DCHP-серверу статический адрес*
+
+<img width="694" height="542" alt="Снимок экрана 2026-04-28 150529" src="https://github.com/user-attachments/assets/3552fefe-b23e-45d7-9592-7ac14ce114f9" />
+
+*Настраиваем раздачу с серверу*
+
+<img width="331" height="47" alt="Снимок экрана 2026-04-24 172609" src="https://github.com/user-attachments/assets/6ac88667-3954-44e6-8f78-f6fa90d58b40" />
+
+*Делаем R1 в качестве DHCP-ретранслятора*
+
+<img width="423" height="315" alt="Снимок экрана 2026-04-24 172646" src="https://github.com/user-attachments/assets/c78e13b1-987f-4137-9b1b-8773f6ce501b" />
+
+*Проверяем на R1 настройку*
+
+Шаг 2
+Проверяем, что РC0 может получить IPv4 от DHCP-сервера с IP 10.23.23.100.
+
+<img width="691" height="303" alt="image" src="https://github.com/user-attachments/assets/b7ea4b1a-7be7-45bd-98e0-e54b99462a43" />
+
+*PC0 получил адрес*
