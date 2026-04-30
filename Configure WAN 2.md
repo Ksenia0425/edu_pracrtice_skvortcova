@@ -544,39 +544,15 @@ no service password-encryption
 !
 hostname R1
 !
-!
-!
-!
-!
-!
-!
-!
 ip cef
 ipv6 unicast-routing
 !
 no ipv6 cef
 !
-!
-!
-!
 license udi pid CISCO2811/K9 sn FTX1017GCRM-
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
+
 !
 spanning-tree mode pvst
-!
-!
-!
-!
-!
 !
 interface FastEthernet0/0
  ip address 10.1.1.1 255.255.255.0
@@ -618,11 +594,6 @@ ip classless
 ip flow-export version 9
 !
 !
-!
-!
-!
-!
-!
 line con 0
 !
 line aux 0
@@ -646,12 +617,6 @@ no service password-encryption
 hostname R2
 !
 !
-!
-!
-!
-!
-!
-!
 ip cef
 ipv6 unicast-routing
 !
@@ -662,21 +627,7 @@ no ipv6 cef
 !
 license udi pid CISCO2811/K9 sn FTX10174F97-
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 spanning-tree mode pvst
-!
-!
-!
-!
 !
 !
 interface FastEthernet0/0
@@ -718,11 +669,6 @@ ip classless
 ip flow-export version 9
 !
 !
-!
-!
-!
-!
-!
 line con 0
 !
 line aux 0
@@ -746,30 +692,7 @@ no service password-encryption
 !
 hostname Switch
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 spanning-tree mode pvst
-!
-!
-!
-!
 !
 !
 interface FastEthernet0/1
@@ -833,21 +756,12 @@ ip classless
 ip flow-export version 9
 !
 !
-!
-!
-!
-!
-!
-!
 line con 0
 !
 line aux 0
 !
 line vty 0 4
  login
-!
-!
-!
 !
 end
 
@@ -863,13 +777,7 @@ no service password-encryption
 !
 hostname R3
 !
-!
-!
-!
 ip dhcp excluded-address 10.1.1.1
-!
-!
-!
 !
 no ip cef
 ipv6 unicast-routing
@@ -885,22 +793,7 @@ license udi pid CISCO2911/K9 sn FTX1524N1GN-
 license boot module c2900 technology-package securityk9
 license boot module c2900 technology-package uck9
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 spanning-tree mode pvst
-!
-!
-!
-!
-!
 !
 interface Loopback3
  ip address 3.3.3.3 255.0.0.0
@@ -978,11 +871,6 @@ ip flow-export version 9
 !
 ipv6 route ::/0 2001:30:30:30::1973
 !
-!
-!
-!
-!
-!
 line con 0
 !
 line aux 0
@@ -1008,10 +896,6 @@ hostname R1973
 !
 !
 !
-!
-!
-!
-!
 no ip cef
 ipv6 unicast-routing
 !
@@ -1025,21 +909,7 @@ username R3 password 0 cisco
 license udi pid CISCO2911/K9 sn FTX1524ICWG-
 !
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
 spanning-tree mode pvst
-!
-!
-!
-!
-!
 !
 interface Loopback1973
  ip address 73.73.73.73 255.255.255.0
@@ -1098,11 +968,6 @@ ip route 0.0.0.0 0.0.0.0 30.30.30.3
 ip flow-export version 9
 !
 ipv6 route ::/0 2001:30:30:30::3
-!
-!
-!
-!
-!
 !
 line con 0
 !
