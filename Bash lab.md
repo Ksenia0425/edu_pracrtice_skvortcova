@@ -1,5 +1,6 @@
 ## 1. zero.sh
 Создаем пустой файл zero.sh:
+
 root@debian:~# touch zero.sh
 
 Пишем скрипт.
@@ -13,6 +14,7 @@ root@debian:~# touch zero.sh
 *Скрипт 2 (часть 2)*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./zero.sh
 Выполняем код скрипта.
 
