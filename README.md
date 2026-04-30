@@ -1,6 +1,7 @@
 # -- ПРАКТИКА PRACTICE --
 
 ЗАДАНИЯ
+
 ✅ 1. Configure LAN 1 (готово)
 
 ✅ 2. Configure WAN 1 (готово)
