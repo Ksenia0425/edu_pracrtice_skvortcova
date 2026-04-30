@@ -16,6 +16,7 @@ root@debian:~# touch zero.sh
 Делаем файл исполняемым:
 
 root@debian:~# chmod +x ./zero.sh
+
 Выполняем код скрипта.
 
 <img width="702" height="121" alt="Снимок экрана 2026-04-29 145432" src="https://github.com/user-attachments/assets/979d0de4-1841-46d0-af18-0fc5df452b8e" />
@@ -24,6 +25,7 @@ root@debian:~# chmod +x ./zero.sh
 
 ## 2. start.sh
 Создаем пустой файл start.sh:
+
 root@debian:~# touch start.sh
 
 Пишем скрипт.
@@ -33,7 +35,9 @@ root@debian:~# touch start.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./start.sh
+
 Выполняем код скрипта.
 
 <img width="338" height="67" alt="Снимок экрана 2026-04-29 145757" src="https://github.com/user-attachments/assets/70f5b58b-d121-432f-8d19-62d230a6923b" />
@@ -42,6 +46,7 @@ root@debian:~# chmod +x ./start.sh
 
 ## 3. start_2.sh
 Создаем пустой файл start_2.sh:
+
 root@debian:~# touch start_2.sh
 
 Пишем скрипт.
@@ -51,7 +56,9 @@ root@debian:~# touch start_2.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./start_2.sh
+
 Выполняем код скрипта.
 
 <img width="332" height="46" alt="Снимок экрана 2026-04-29 150558" src="https://github.com/user-attachments/assets/a513aa54-b8b5-417f-b8e7-8196e9d79854" />
@@ -60,6 +67,7 @@ root@debian:~# chmod +x ./start_2.sh
 
 ## 4. file.sh
 Создаем пустой файл file.sh:
+
 root@debian:~# touch file.sh
 
 Пишем скрипт.
@@ -69,7 +77,9 @@ root@debian:~# touch file.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./file.sh
+
 Выполняем код скрипта.
 
 <img width="306" height="73" alt="Снимок экрана 2026-04-29 153929" src="https://github.com/user-attachments/assets/e824f7e2-6ad1-43f0-bba3-912f0ea0cf5c" />
@@ -78,6 +88,7 @@ root@debian:~# chmod +x ./file.sh
 
 ## 5. my_dir.sh
 Создаем пустой файл my_dir.sh:
+
 root@debian:~# touch my_dir.sh
 
 Пишем скрипт.
@@ -87,7 +98,9 @@ root@debian:~# touch my_dir.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./my_dir.sh
+
 Выполняем код скрипта.
 
 <img width="322" height="58" alt="Снимок экрана 2026-04-29 161037" src="https://github.com/user-attachments/assets/89ef619c-4a00-44be-9179-a3900342e944" />
@@ -96,6 +109,7 @@ root@debian:~# chmod +x ./my_dir.sh
 
 ## 6. dir_m.sh
 Создаем пустой файл dir_m.sh:
+
 root@debian:~# touch dir_m.sh
 
 Пишем скрипт.
@@ -105,7 +119,9 @@ root@debian:~# touch dir_m.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./dir_m.sh
+
 Выполняем код скрипта.
 
 <img width="313" height="75" alt="Снимок экрана 2026-04-29 161544" src="https://github.com/user-attachments/assets/ff04d5ae-fa47-42db-8f6b-fced5b682c28" />
@@ -114,6 +130,7 @@ root@debian:~# chmod +x ./dir_m.sh
 
 ## 7. user_light.sh
 Создаем пустой файл user_light.sh:
+
 root@debian:~# touch user_light.sh
 
 Пишем скрипт.
@@ -123,7 +140,9 @@ root@debian:~# touch user_light.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./user_light.sh
+
 Выполняем код скрипта.
 
 <img width="344" height="57" alt="Снимок экрана 2026-04-29 163250" src="https://github.com/user-attachments/assets/aabb3f90-7995-4a8b-9384-de826f78c381" />
@@ -132,6 +151,7 @@ root@debian:~# chmod +x ./user_light.sh
 
 ## 8. user_f.sh
 Создаем пустой файл user_f.sh:
+
 root@debian:~# touch user_f.sh
 
 Пишем скрипт.
@@ -141,7 +161,9 @@ root@debian:~# touch user_f.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./user_f.sh
+
 Выполняем код скрипта.
 
 <img width="416" height="124" alt="Снимок экрана 2026-04-29 163716" src="https://github.com/user-attachments/assets/1d4cb8f0-4914-4e77-af29-a59b11014c74" />
@@ -150,6 +172,7 @@ root@debian:~# chmod +x ./user_f.sh
 
 ## 9. user_f2.sh
 Создаем пустой файл user_f2.sh:
+
 root@debian:~# touch user_f2.sh
 
 Пишем скрипт.
@@ -159,7 +182,9 @@ root@debian:~# touch user_f2.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./user_f2.sh
+
 Выполняем код скрипта.
 
 <img width="496" height="66" alt="Снимок экрана 2026-04-29 170800" src="https://github.com/user-attachments/assets/402cf198-25da-406c-a53e-6cebe88ee213" />
@@ -168,6 +193,7 @@ root@debian:~# chmod +x ./user_f2.sh
 
 ## 10. finder_liight.sh
 Создаем пустой файл finder_liight.sh:
+
 root@debian:~# touch finder_liight.sh
 
 Пишем скрипт.
@@ -177,7 +203,9 @@ root@debian:~# touch finder_liight.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./finder_liight.sh
+
 Выполняем код скрипта.
 
 <img width="366" height="114" alt="Снимок экрана 2026-04-30 133647" src="https://github.com/user-attachments/assets/a9b91c33-cce2-462f-bf71-8ccc1e2aada6" />
@@ -186,6 +214,7 @@ root@debian:~# chmod +x ./finder_liight.sh
 
 ## 11. math.sh
 Создаем пустой файл math.sh:
+
 root@debian:~# touch math.sh
 
 Пишем скрипт.
@@ -195,7 +224,9 @@ root@debian:~# touch math.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./math.sh
+
 Выполняем код скрипта.
 
 <img width="274" height="87" alt="Снимок экрана 2026-04-30 134116" src="https://github.com/user-attachments/assets/876c7bd0-f6c8-4990-8f1c-e29b163ac59e" />
@@ -204,6 +235,7 @@ root@debian:~# chmod +x ./math.sh
 
 ## 12. sort.sh
 Создаем пустой файл sort.sh:
+
 root@debian:~# touch sort.sh
 
 Пишем скрипт.
@@ -213,7 +245,9 @@ root@debian:~# touch sort.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./sort.sh
+
 Выполняем код скрипта.
 
 <img width="636" height="93" alt="Снимок экрана 2026-04-30 134558" src="https://github.com/user-attachments/assets/06f8cacd-6d48-486f-9987-d5cf6adee0d4" />
@@ -222,6 +256,7 @@ root@debian:~# chmod +x ./sort.sh
 
 ## 13. io.sh
 Создаем пустой файл io.sh:
+
 root@debian:~# touch io.sh
 
 Пишем скрипт.
@@ -231,7 +266,9 @@ root@debian:~# touch io.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./io.sh
+
 Выполняем код скрипта.
 
 <img width="272" height="122" alt="Снимок экрана 2026-04-30 135441" src="https://github.com/user-attachments/assets/59f1e0c6-e0a0-4cee-84c1-0179bcff0c07" />
@@ -240,6 +277,7 @@ root@debian:~# chmod +x ./io.sh
 
 ## 14. user_use.sh
 Создаем пустой файл user_use.sh:
+
 root@debian:~# touch user_use.sh
 
 Пишем скрипт.
@@ -249,7 +287,9 @@ root@debian:~# touch user_use.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./user_use.sh
+
 Выполняем код скрипта.
 
 <img width="285" height="36" alt="Снимок экрана 2026-04-30 135723" src="https://github.com/user-attachments/assets/a7e870dc-e92d-4d55-968d-7b6d35f7193f" />
@@ -258,6 +298,7 @@ root@debian:~# chmod +x ./user_use.sh
 
 ## 15. sort_du.sh
 Создаем пустой файл sort_du.sh:
+
 root@debian:~# touch sort_du.sh
 
 Пишем скрипт.
@@ -267,7 +308,9 @@ root@debian:~# touch sort_du.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./sort_du.sh
+
 Выполняем код скрипта.
 
 <img width="443" height="92" alt="Снимок экрана 2026-04-30 135952" src="https://github.com/user-attachments/assets/b7c0c3b1-4539-45f6-a2f0-5757f086a475" />
@@ -276,6 +319,7 @@ root@debian:~# chmod +x ./sort_du.sh
 
 ## 16. dir_info.sh
 Создаем пустой файл dir_info.sh:
+
 root@debian:~# touch dir_info.sh
 
 Пишем скрипт.
@@ -285,7 +329,9 @@ root@debian:~# touch dir_info.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./dir_info.sh
+
 Выполняем код скрипта.
 
 <img width="279" height="55" alt="Снимок экрана 2026-04-30 140326" src="https://github.com/user-attachments/assets/91bccc86-e899-4564-9f01-ff99c8897b4f" />
@@ -294,6 +340,7 @@ root@debian:~# chmod +x ./dir_info.sh
 
 ## 17. bash_history.sh
 Создаем пустой файл bash_history.sh:
+
 root@debian:~# touch bash_history.sh
 
 Пишем скрипт.
@@ -303,7 +350,9 @@ root@debian:~# touch bash_history.sh
 *Скрипт*
 
 Делаем файл исполняемым:
+
 root@debian:~# chmod +x ./bash_history.sh
+
 Выполняем код скрипта.
 
 <img width="343" height="130" alt="Снимок экрана 2026-04-30 140730" src="https://github.com/user-attachments/assets/dfe24d03-abcb-48e5-85ba-c348b5c91021" />
