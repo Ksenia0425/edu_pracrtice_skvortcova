@@ -359,3 +359,178 @@ root@debian:~# chmod +x ./bash_history.sh
 
 *Выполнение скрипта*
 
+---
+# Блок кода
+```
+1. zero.sh
+
+#!/bin/bash
+
+group="321"
+name="Ксения"
+familia="Скворцова"
+stipendie="778"
+stipendie_dollar="7,5"
+
+echo "Я учусь в $group, зовут меня $name $familia. В этом месяце мне пришла стипендия размером в $stipendie рублей, это в $stipendie_dollar \$"
+
+```
+```
+2. start.sh
+#/bin/bash
+
+echo "Privet, $1"
+
+```
+```
+3. start_2.sh
+
+#!/bin/bash
+
+if [ -n "$1" ]; then
+  echo "Privet, $1"
+else
+  echo "Аргумента нету :("
+fi
+
+```
+
+```
+4. file.sh
+#!/bin/bash
+if [ -f "$1" ]; then
+  echo "Файл $1 существует"
+else
+  echo "Файл $1 не нашли"
+
+fi
+
+```
+```
+5. my_dir.sh
+#!/bin/bash
+if [ -d "$1" ]; then
+  ls "$1"
+else
+  echo "Такой "$1" директории не существует"
+fi
+```
+```
+6. dir_m.sh
+#!/bin/bash
+if [ -d "$1" ]; then
+  echo "Директория $1 уже есть такая"
+else
+  mkdir "$1" && echo "Директория $1 создана"
+fi
+```
+```
+7. user_light.sh
+#!/bin/bash
+if grep -q "^$USER:" /etc/passwd; then
+  echo "ypa, мы $USER нашли!"
+fi
+
+```
+```
+8. user_f.sh
+#!/bin/bash
+if grep -q "^$1:" /etc/passwd; then
+    echo "Пользователь $1 найден!"
+else
+  echo "Пользователь $1 не нашли, он потерялся : ("
+Fi
+
+```
+```
+9. user_f2.sh
+#!/bin/bash
+if grep -q "^$1:" /etc/passws; then
+  echo "Пользователь $1 нашелся"
+else
+  touch "don_t_be_sad_user_${1}_will_be_there_soon. txt"
+  echo "Пользователь $1 не нашелся, но мы создали ему файл"
+
+fi
+
+```
+```
+10. finder_liight.sh
+#!/bin/bash
+if [ -L "$1" ]; then
+  echo "$1 - это символическая ссылка"
+elif [ -f "$1" ]; then
+  echo "$1 - это файл"
+elif [ -d "$1" ]; then
+  echo "$1 - это директория"
+else
+  echo "$1 - не существующий тип"
+fi
+```
+```
+11. math.sh
+#!/bin/bash
+
+a=$1
+b=$2
+echo "CyMMa - $( (a + b) )"
+echo "Pa3HOCTb - $((a - b) )"
+echo "Произведение - $((а * b))"
+
+```
+```
+12. sort.sh
+#!/bin/bash
+
+for a in "$@"; do
+  echo "$a"
+done
+
+```
+```
+13. io.sh
+#!/bin/bash
+
+if [ "$1" = "start" ]; then
+  echo "Starting ... "
+elif [ "$1" = "stop" ]; then
+  echo "Stopping ... "
+else
+  echo "Попробуйте сНоВа"
+fil
+```
+```
+14. user_use.sh
+#!/bin/bash
+du -sh /home/* 2>/dev/null | sort -rh
+
+```
+```
+15. sort_du.sh
+
+#!/bin/bash
+dir="${1:-.}"
+find "$dir" -type f -printf "%T+ %p\n" | sort | head -3 | while read -r date file; do
+  modified=$(stat -c "%y" "$file" 2>/dev/null || echo "неизвестно")
+  echo "$file — $modified"
+done
+```
+```
+16. dir_info.sh
+#!/bin/bash
+
+dir="${1 :-. }"
+size=$(du -sk "$dir" | awk '{print $1}' )
+echo "Общий размер: $size Kb"
+
+```
+```
+17. bash_history.sh
+#!/bin/bash
+if [ -f ~/.bash_history ]; then
+  awk '{print $1}' ~/.bash_history | sort | uniq -c | sort -nr | head -5
+else
+  echo "Файл не найден"
+fi
+
+```
