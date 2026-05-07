@@ -345,3 +345,56 @@
 <img width="473" height="92" alt="Снимок экрана 2026-05-06 152853" src="https://github.com/user-attachments/assets/ae513338-864f-429b-bc76-18ab4e6ada1c" />
 
 *Настройка телефонного сервиса в автоматическом режиме на RouterB*
+
+На коммутаторах назначам диапазон портов.
+
+<img width="371" height="137" alt="Снимок экрана 2026-05-06 153245" src="https://github.com/user-attachments/assets/3ccf91dd-28f6-4fe8-a588-45d296b38c29" />
+
+*Назначение диапазона портов на SwitchA*
+
+<img width="357" height="137" alt="Снимок экрана 2026-05-06 153423" src="https://github.com/user-attachments/assets/3312489f-071c-4cdd-8cbb-56ca8aa8dbf8" />
+
+*Назначение диапазона портов на SwitchB*
+
+Создаем на маршрутизаторах логические телефонный линии и назначаем номера.
+
+<img width="636" height="313" alt="Снимок экрана 2026-05-06 153739" src="https://github.com/user-attachments/assets/8a9435b2-11b9-4890-b545-abdc219be05e" />
+
+*Создание логических телефонных линий и назначаем номер на RouterA*
+
+<img width="701" height="623" alt="Снимок экрана 2026-05-06 153801" src="https://github.com/user-attachments/assets/7d7c4d78-a3c4-4134-a582-d4c9e92ea664" />
+
+*Телефон получил номер*
+
+<img width="645" height="353" alt="Снимок экрана 2026-05-06 153922" src="https://github.com/user-attachments/assets/5f2511e1-1d40-4be0-a9ec-c9b2c9f77c99" />
+
+*Создание логических телефонных линий и назначаем номер на RouterB*
+
+<img width="703" height="607" alt="Снимок экрана 2026-05-06 153935" src="https://github.com/user-attachments/assets/5f0c9f10-4168-4c2b-ad4a-810757e1ddc1" />
+
+*Телефон получил номер*
+
+В качестве финальной проверки пропингуем PC между собой.
+
+<img width="445" height="225" alt="Снимок экрана 2026-05-06 154013" src="https://github.com/user-attachments/assets/14fc898c-bf62-4eab-87f2-408d19cdf349" />
+
+*Успешный пинг между PC*
+
+---
+
+```
+# Блок код
+
+```
+Контрольные вопросы
+
+# 8. Лабораторная работа. Построение сети IP-телефонии между удаленными маршрутизаторами
+
+Собираем топологию по заданию.
+
+<img width="513" height="501" alt="Снимок экрана 2026-05-06 160809" src="https://github.com/user-attachments/assets/63405242-02ca-4273-92e7-31bc92351dd9" />
+
+*Топология сети*
+
+Переменовываем маршрутизатор и настраиваем интерфейс s0/1/0.
+
