@@ -406,11 +406,15 @@
 
 *Настройка интерфейса s0/1/0 на RemoteRouter*
 
-Настраиваем маршрутизатор по протоколу eigrp 100.
+Настраиваем маршрутизаторах по протоколу eigrp 100.
 
 <img width="299" height="69" alt="Снимок экрана 2026-05-06 161257" src="https://github.com/user-attachments/assets/c74fee17-24a5-4186-a149-3520c5ec6dc5" />
 
 *Настройка eigrp 100 на CMERoute*
+
+<img width="576" height="126" alt="Снимок экрана 2026-05-06 162614" src="https://github.com/user-attachments/assets/0d3211d7-8a67-4a51-b726-43d63d63c389" />
+
+*Настройка eigrp 100 на RemoteRouter*
 
 Проверяем соединение между маршрутизаторами с помощью пинга.
 
@@ -428,8 +432,80 @@
 
 *Подинтерфейс на VLAN 30 на RemoteRouter*
 
+<img width="436" height="63" alt="Снимок экрана 2026-05-06 162323" src="https://github.com/user-attachments/assets/79d2e34f-5092-4e8b-bd93-a322c96c9310" />
 
 *Подинтерфейс на VLAN 40 на CMERouter*
 
+<img width="433" height="58" alt="Снимок экрана 2026-05-06 162415" src="https://github.com/user-attachments/assets/1de5157f-9b31-4cb6-b7b3-324b4eb007b8" />
 
 *Подинтерфейс на VLAN 30 на CMERouter*
+
+Переходим к настройкам коммутаторах.
+
+<img width="300" height="44" alt="Снимок экрана 2026-05-06 162839" src="https://github.com/user-attachments/assets/71c776fc-feb5-4e61-8d45-e9fe003017e2" />
+
+*Меняем имя устройства на RemoteSwitch*
+
+<img width="299" height="42" alt="Снимок экрана 2026-05-06 163750" src="https://github.com/user-attachments/assets/bfd64f71-aa11-4898-97fc-eeba4e35ca83" />
+
+*Меняем имя устройства на CMESwitch*
+
+Задаем пароли в удаленном режиме и консольном для защиты коммутатора.
+
+<img width="334" height="139" alt="Снимок экрана 2026-05-06 163106" src="https://github.com/user-attachments/assets/58bd1ece-d671-428e-8143-4f4b411c904d" />
+
+*Безопасность на RemoteSwitch*
+
+На коммутаторах настраиваем первый порт как транковый.
+
+<img width="524" height="168" alt="Снимок экрана 2026-05-06 163250" src="https://github.com/user-attachments/assets/10fb64c6-ed1d-4790-bf7c-5938ec716fa3" />
+
+*Настройка f0/1 на RemoteSwitch*
+
+<img width="625" height="259" alt="Снимок экрана 2026-05-06 163856" src="https://github.com/user-attachments/assets/62fffca6-10a6-4bf1-8c6b-d90df4f365fd" />
+
+*Настройка f0/1 на CMESwitch*
+
+Создаем VLAN-ы на коммутаторах и даем им имена.
+
+<img width="276" height="91" alt="Снимок экрана 2026-05-06 163332" src="https://github.com/user-attachments/assets/5288e32b-649b-49f1-876f-4dde4032f5a5" />
+
+*Создание VLAN на RemoteSwitch*
+
+<img width="247" height="103" alt="Снимок экрана 2026-05-06 163927" src="https://github.com/user-attachments/assets/0d0638e7-bdc4-42f6-8a9f-2a169dd014ce" />
+
+*Создание VLAN на CMESwitch*
+
+Настраиваем остальные порты.
+
+<img width="526" height="183" alt="Снимок экрана 2026-05-06 163518" src="https://github.com/user-attachments/assets/125a45bf-0bba-49ca-97bf-6b8ee98ca6f1" />
+
+*Интерфейсы на RemoteSwitch*
+
+<img width="542" height="277" alt="Снимок экрана 2026-05-06 164037" src="https://github.com/user-attachments/assets/6541a85a-cc16-454e-8b8b-75a506211d9a" />
+
+*Интерфейсы на CMESwitch*
+
+Настраиваем на маршрутизаторах пул DHCP адресов.
+
+<img width="391" height="155" alt="Снимок экрана 2026-05-06 164535" src="https://github.com/user-attachments/assets/7aa9d0c3-cd4e-4886-a3f5-d216ea9e380d" />
+
+*Пул DHCP адресов на CMERouter*
+
+<img width="416" height="156" alt="Снимок экрана 2026-05-06 165329" src="https://github.com/user-attachments/assets/0df402f0-c494-40a3-8ada-85e03b8a3a2d" />
+
+*Пул DHCP адресов на RemoteRouter*
+
+Настраиваем телефонный сервис.
+
+<img width="435" height="82" alt="Снимок экрана 2026-05-06 164715" src="https://github.com/user-attachments/assets/cf0f3bdb-5851-4155-951e-d3e057568adf" />
+
+*Настройка телефонного севиса на CMERouter*
+
+<img width="470" height="100" alt="Снимок экрана 2026-05-06 165501" src="https://github.com/user-attachments/assets/f585124e-df22-44cd-8ae6-f25b03d993db" />
+
+*Настройка телефонного севиса на RemoteRouter*
+
+<img width="703" height="512" alt="Снимок экрана 2026-05-06 164858" src="https://github.com/user-attachments/assets/f6203056-f306-426e-97c9-07deb996e4d7" />
+
+*Телефоны получили номера*
