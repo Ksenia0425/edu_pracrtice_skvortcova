@@ -94,3 +94,24 @@
 
 *Меняем имя устройства*
 
+Задаем пароли для защиты маршрутизатора как в удаленном режиме, так и в режиме консоли.
+
+<img width="329" height="165" alt="Снимок экрана 2026-05-05 144332" src="https://github.com/user-attachments/assets/88198687-0dd5-4f46-803f-8ab4033139b2" />
+
+Настраиваем интерфейс f0/0.
+
+<img width="595" height="140" alt="Снимок экрана 2026-05-05 144519" src="https://github.com/user-attachments/assets/c85472af-cb30-4fa7-84c9-acbfe4bc498b" />
+
+*Настройка интерфейса f0/0*
+
+Настраиваем DHCP сервер на маршрутизаторе.
+
+<img width="423" height="60" alt="Снимок экрана 2026-05-05 144654" src="https://github.com/user-attachments/assets/f75193f1-5c61-41a0-8226-62f68c2061e2" />
+
+*DHCP сервер на маршрутизаторе*
+
+Включаем опцию для передачи голоса.
+
+<img width="360" height="29" alt="Снимок экрана 2026-05-05 144728" src="https://github.com/user-attachments/assets/2d10f0c0-54b8-487f-8e37-97c7f8ff630a" />
+
+*Включение опиции 150*
