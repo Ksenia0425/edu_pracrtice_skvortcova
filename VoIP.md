@@ -396,5 +396,40 @@
 
 *Топология сети*
 
-Переменовываем маршрутизатор и настраиваем интерфейс s0/1/0.
+Переменовываем маршрутизаторы и настраиваем интерфейс s0/1/0.
 
+<img width="445" height="77" alt="Снимок экрана 2026-05-06 160941" src="https://github.com/user-attachments/assets/a86e1066-c058-4440-beb7-a9c0432e153c" />
+
+*Настройка интерфейса s0/1/0 на CMERouter*
+
+<img width="461" height="116" alt="Снимок экрана 2026-05-06 161435" src="https://github.com/user-attachments/assets/e0cee5ca-f557-4703-b87a-8b1885e985fb" />
+
+*Настройка интерфейса s0/1/0 на RemoteRouter*
+
+Настраиваем маршрутизатор по протоколу eigrp 100.
+
+<img width="299" height="69" alt="Снимок экрана 2026-05-06 161257" src="https://github.com/user-attachments/assets/c74fee17-24a5-4186-a149-3520c5ec6dc5" />
+
+*Настройка eigrp 100 на CMERoute*
+
+Проверяем соединение между маршрутизаторами с помощью пинга.
+
+<img width="504" height="123" alt="Снимок экрана 2026-05-06 161510" src="https://github.com/user-attachments/assets/38292006-62a2-4b20-b373-f01db5d626f7" />
+
+*Успешный пинг между маршрутизаторами*
+
+Создаем на маршрутизаторах подинтерфейсы на VLAN.
+
+<img width="441" height="60" alt="Снимок экрана 2026-05-06 162036" src="https://github.com/user-attachments/assets/40300d83-35af-4369-9465-183e881e1fce" />
+
+*Подинтерфейс на VLAN 40 на RemoteRouter*
+
+<img width="448" height="65" alt="Снимок экрана 2026-05-06 162212" src="https://github.com/user-attachments/assets/872e2cf5-b2cb-4911-9caa-6fd11000b1b7" />
+
+*Подинтерфейс на VLAN 30 на RemoteRouter*
+
+
+*Подинтерфейс на VLAN 40 на CMERouter*
+
+
+*Подинтерфейс на VLAN 30 на CMERouter*
