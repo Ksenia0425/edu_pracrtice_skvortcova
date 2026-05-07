@@ -271,3 +271,49 @@
 <img width="810" height="428" alt="Снимок экрана 2026-05-06 150615" src="https://github.com/user-attachments/assets/33a5731e-f8b0-415c-ae91-3ff59d22c6aa" />
 
 *Топология сети*
+
+Переменовываем роутер.
+
+<img width="248" height="38" alt="Снимок экрана 2026-05-06 150703" src="https://github.com/user-attachments/assets/7051c246-8503-4222-85d7-4c217f8516a9" />
+
+*Меняем имя устройства RouterA*
+
+<img width="230" height="16" alt="Снимок экрана 2026-05-06 150858" src="https://github.com/user-attachments/assets/591fd9cd-22a5-45e5-98df-73e92fbafd7f" />
+
+*Меняем имя устройства RouterB*
+
+Настраиваем конфигурацию на f0/0 на маршрутизаторах.
+
+<img width="611" height="171" alt="Снимок экрана 2026-05-06 150752" src="https://github.com/user-attachments/assets/6d573040-710f-44e0-b26f-6568ad460cc0" />
+
+*Настройка конфигурации на f0/0 на RouterA*
+
+<img width="598" height="117" alt="Снимок экрана 2026-05-06 150854" src="https://github.com/user-attachments/assets/fb4eb5f4-1022-4937-af0f-56ed2a21d533" />
+
+*Настройка конфигурации на f0/0 на RouterA*
+
+Настраиваем интерфес s0/3/0 на RouterA.
+
+<img width="391" height="58" alt="Снимок экрана 2026-05-06 151127" src="https://github.com/user-attachments/assets/3fffbb5d-f748-43e1-854a-a2977d78a40b" />
+
+*Настройка интерфеса s0/3/0 на RouterA*
+
+Настраиваем интерфес s0/3/0 на RouterB.
+
+<img width="439" height="122" alt="Снимок экрана 2026-05-06 151241" src="https://github.com/user-attachments/assets/8b9c0593-6b65-4ea3-b294-6bffb9dab32c" />
+
+*Настройка интерфеса s0/3/0 на RouterB*
+
+Настраиваем DHCP сервер на маршрутизаторе RouterA.
+
+<img width="403" height="72" alt="Снимок экрана 2026-05-06 151511" src="https://github.com/user-attachments/assets/3e84dc66-3eda-4db8-8d23-c74b567ab250" />
+
+*Настройка DHCP сервер на маршрутизаторе RouterA*
+
+Настраиваем DHCP сервер на маршрутизаторе RouterB.
+
+<img width="406" height="66" alt="Снимок экрана 2026-05-06 151910" src="https://github.com/user-attachments/assets/fab47ea2-6da6-49b2-8898-baebb947febf" />
+
+*Настройка DHCP сервер на маршрутизаторе RouterB*
+
+
