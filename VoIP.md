@@ -128,8 +128,43 @@
 
 Каждому телефону определяем несколько логических линий со своим номером.
 
-![Uploading Снимок экрана 2026-05-05 150015.png…]()
+<img width="633" height="268" alt="Снимок экрана 2026-05-05 150015" src="https://github.com/user-attachments/assets/5930adb3-6e88-47a5-b28a-eff059f2786a" />
 
 *Назначение номеров*
 
+Проверяем связь между телефонами.
 
+<img width="704" height="555" alt="Снимок экрана 2026-05-05 150551" src="https://github.com/user-attachments/assets/4a1b744b-f2b3-4d62-8e4d-c6ff115e278b" />
+
+*Делаем звонок*
+
+<img width="697" height="575" alt="Снимок экрана 2026-05-05 150613" src="https://github.com/user-attachments/assets/6d699293-49a3-432f-94cc-1027c89c7f96" />
+
+*Вызов приянт*
+
+---
+
+```
+# Блок код
+
+```
+Контрольные вопросы
+
+# 4. Лабораторная работа. Конфигурация VOIP в среде Cisco Packet Tracer
+
+Собираем топологию по заданию.
+
+<img width="536" height="595" alt="image" src="https://github.com/user-attachments/assets/f85b82fb-c2e6-48f4-a2c7-950ec3f1e9f1" />
+
+*Топология сети*
+
+Создаем vlan и назначаем имана.
+
+
+*Создание vlan*
+
+Настраиваем vlan 99.
+
+
+
+*Настройка vlan 99*
