@@ -28,19 +28,19 @@
 
 <img width="412" height="66" alt="Снимок экрана 2026-05-04 184609" src="https://github.com/user-attachments/assets/c4670bd8-f602-4692-b1c0-d01ce974f66b" />
 
-**
+*Пул DHCP адресов*
 
 Настраиваем телефонный сервис в автоматическом режиме. Задаем максимальное количество номеров, присваиваемых IP-телефоном. Задаем максимальное количество IP-телефонов. Задаем IP-адреса.
 
 <img width="502" height="83" alt="Снимок экрана 2026-05-04 184817" src="https://github.com/user-attachments/assets/10e79345-ac31-4cd2-96a7-8f47753081f6" />
 
-**
+*Настройка телефонного сервиса*
 
 На коммутаторе в сети VLAN нужно назначить диапазоны портов.
 
 <img width="358" height="47" alt="Снимок экрана 2026-05-04 185048" src="https://github.com/user-attachments/assets/e8904b54-8e30-411c-93bf-b8e4e9ae1576" />
 
-**
+*Назначение диапазонов портов*
 
 Каждому телефону определяем несколько логических линий со своим номером.
 
@@ -316,4 +316,32 @@
 
 *Настройка DHCP сервер на маршрутизаторе RouterB*
 
+Настраиваем динамическую маршрутизацию.
 
+<img width="304" height="61" alt="Снимок экрана 2026-05-06 152126" src="https://github.com/user-attachments/assets/3e282916-f00b-4d79-a879-f45e23f2f796" />
+
+*Настройка динамической маршрутизации на RouterA*
+
+<img width="295" height="68" alt="Снимок экрана 2026-05-06 152441" src="https://github.com/user-attachments/assets/6fd9c564-8d88-442b-9ee1-35e721e6c11a" />
+
+*Настройка динамической маршрутизации на RouterB*
+
+Получаем по DHCP адрес на PC.
+
+<img width="701" height="300" alt="Снимок экрана 2026-05-06 153003" src="https://github.com/user-attachments/assets/39a3b63f-25b2-40de-96ca-9bf34967ebde" />
+
+*Первый*
+
+<img width="705" height="300" alt="Снимок экрана 2026-05-06 153540" src="https://github.com/user-attachments/assets/b7c8800b-89d8-431a-8c7b-c6023f08589a" />
+
+*Второй*
+
+Настраиваем телефонный сервис в автоматическом режиме.
+
+<img width="478" height="101" alt="Снимок экрана 2026-05-06 152707" src="https://github.com/user-attachments/assets/5ac75a80-790a-4009-b20c-71876ad8c8e9" />
+
+*Настройка телефонного сервиса в автоматическом режиме на RouterA*
+
+<img width="473" height="92" alt="Снимок экрана 2026-05-06 152853" src="https://github.com/user-attachments/assets/ae513338-864f-429b-bc76-18ab4e6ada1c" />
+
+*Настройка телефонного сервиса в автоматическом режиме на RouterB*
