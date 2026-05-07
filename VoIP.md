@@ -160,10 +160,61 @@
 
 Создаем vlan и назначаем имана.
 
+<img width="287" height="200" alt="Снимок экрана 2026-05-05 170025" src="https://github.com/user-attachments/assets/b8ae607d-f326-4434-a1fc-db6137347499" />
 
 *Создание vlan*
 
 Настраиваем vlan 99.
 
+<img width="428" height="141" alt="Снимок экрана 2026-05-05 170135" src="https://github.com/user-attachments/assets/fafbafc7-b7f2-45c4-a7cb-237da4a9a5ef" />
 
 *Настройка vlan 99*
+
+Задаем маршрут по умолчанию.
+
+<img width="370" height="74" alt="Снимок экрана 2026-05-05 170322" src="https://github.com/user-attachments/assets/060dfaed-1f8c-4937-80b1-bbd8712409d8" />
+
+*Настройка маршрута по уморлчанию*
+
+Настраиваем интерфейсы в сети vlan через назначение диапазона портов.
+
+
+
+*Настройка интерфейсов f0/2-4*
+
+Теперь настраиваем роутер. Включаем интерфейс f0/0.
+
+<img width="607" height="109" alt="Снимок экрана 2026-05-05 170730" src="https://github.com/user-attachments/assets/eb9614ec-e683-4c89-a155-ce72e58ecf74" />
+
+*Включение интерфейса f0/0*
+
+Создаем логический подынтерфейса для VLAN 10, VLAN 20, VLAN 99.
+
+<img width="624" height="244" alt="Снимок экрана 2026-05-05 171057" src="https://github.com/user-attachments/assets/1bc6d67d-a992-41e0-91d9-b95289e6bf10" />
+
+*Создание логических подынтерфейсов для VLAN 10*
+
+<img width="625" height="212" alt="Снимок экрана 2026-05-05 171106" src="https://github.com/user-attachments/assets/c5d98956-42dc-44db-9176-d8dd5bf47efc" />
+
+*Создание логических подынтерфейсов для VLAN 20*
+
+<img width="629" height="146" alt="Снимок экрана 2026-05-05 171219" src="https://github.com/user-attachments/assets/dadf66c9-f04a-4600-9d65-cb8c554df058" />
+
+*Создание логических подынтерфейсов для VLAN 99*
+
+Исключаем из пула адрес интерфейса маршрутизатора и DNS-сервера.
+
+<img width="475" height="34" alt="Снимок экрана 2026-05-05 171549" src="https://github.com/user-attachments/assets/20f4909f-8079-484e-8eef-78b817179417" />
+
+*Исключение из пула адресов интерфейсов маршрутизатора и DNS-сервера*
+
+Настраиваем DHCP сервера для передачи голоса и данных.
+
+
+*Настройка DHCP сервера для передачи данных*
+
+
+*Настройка DHCP сервера для передачи голоса*
+
+
+
