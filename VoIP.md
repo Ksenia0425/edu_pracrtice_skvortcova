@@ -178,7 +178,7 @@
 
 Настраиваем интерфейсы в сети vlan через назначение диапазона портов.
 
-
+<img width="371" height="67" alt="Снимок экрана 2026-05-05 172238" src="https://github.com/user-attachments/assets/32c85f3a-3de4-499f-9705-a0e1f20a69b5" />
 
 *Настройка интерфейсов f0/2-4*
 
@@ -210,11 +210,64 @@
 
 Настраиваем DHCP сервера для передачи голоса и данных.
 
+<img width="409" height="64" alt="Снимок экрана 2026-05-05 171735" src="https://github.com/user-attachments/assets/50e9f4fc-448d-45b0-82a0-e54f0033ab27" />
 
 *Настройка DHCP сервера для передачи данных*
 
+<img width="378" height="57" alt="Снимок экрана 2026-05-05 172047" src="https://github.com/user-attachments/assets/266207d8-8a1a-41be-96a1-505c1f1f6ace" />
 
 *Настройка DHCP сервера для передачи голоса*
 
+Проверяем получение адреса на PC.
 
+<img width="695" height="316" alt="Снимок экрана 2026-05-05 200422" src="https://github.com/user-attachments/assets/a481b876-9bcc-4860-be59-9ed7fca70931" />
 
+*Получение DHCP на первом PC*
+
+<img width="696" height="308" alt="Снимок экрана 2026-05-05 200432" src="https://github.com/user-attachments/assets/6dfef343-6c2f-451f-a745-32465567728c" />
+
+*Получение DHCP на втором PC*
+
+<img width="689" height="294" alt="Снимок экрана 2026-05-05 200444" src="https://github.com/user-attachments/assets/cfac7ac7-1322-4c65-9eb4-9c6690564568" />
+
+*Получение DHCP на третьем PC*
+
+Настраиваем телефонный сервис в автоматическом режиме.
+
+<img width="483" height="89" alt="Снимок экрана 2026-05-05 172533" src="https://github.com/user-attachments/assets/1525ceca-fb32-4d05-ade4-e0d1b20f0f20" />
+
+*Настройка телефонного сервиса в автоматическом режиме*
+
+Назначаем номера для всех IP-телефонов в сети.
+
+<img width="657" height="273" alt="Снимок экрана 2026-05-05 172722" src="https://github.com/user-attachments/assets/fed006f1-9463-4d09-87ff-5911ab09f59a" />
+
+*Назначение номера для всех IP-телефонов в сети*
+
+<img width="355" height="43" alt="Снимок экрана 2026-05-06 145226" src="https://github.com/user-attachments/assets/3c8e973a-f745-49d5-aac9-8529aa015f1c" />
+
+*Назначение номера для первого IP-телефона в сети по mac-адерсу*
+
+<img width="617" height="131" alt="Снимок экрана 2026-05-06 145445" src="https://github.com/user-attachments/assets/61dbaa2c-d651-4ce9-a9d5-f3ed91d69043" />
+
+*Назначение номера для второго IP-телефона в сети по mac-адерсу*
+
+<img width="617" height="131" alt="Снимок экрана 2026-05-06 145445" src="https://github.com/user-attachments/assets/8683b840-971d-449a-adf2-4b1fc69ca789" />
+
+*Назначение номера для третьего IP-телефона в сети по mac-адерсу*
+
+---
+
+```
+# Блок код
+
+```
+Контрольные вопросы
+
+# 7. Лабораторная работа. Построение сети IP-телефонии между удаленными маршрутизаторами в среде Cisco Packet Tracer
+
+Собираем топологию по заданию.
+
+<img width="810" height="428" alt="Снимок экрана 2026-05-06 150615" src="https://github.com/user-attachments/assets/33a5731e-f8b0-415c-ae91-3ff59d22c6aa" />
+
+*Топология сети*
